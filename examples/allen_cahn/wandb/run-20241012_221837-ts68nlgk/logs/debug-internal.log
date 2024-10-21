@@ -1,0 +1,18 @@
+{"time":"2024-10-12T22:18:37.825285-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:18:37.82535-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_221837-ts68nlgk/logs/debug-core.log"}
+{"time":"2024-10-12T22:18:37.825492-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:18:37.825501-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_221837-ts68nlgk/logs/debug-core.log"}
+{"time":"2024-10-12T22:18:37.833664-04:00","level":"INFO","msg":"created new stream","id":"ts68nlgk"}
+{"time":"2024-10-12T22:18:37.833729-04:00","level":"INFO","msg":"stream: started","id":"ts68nlgk"}
+{"time":"2024-10-12T22:18:37.833734-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ts68nlgk"}}
+{"time":"2024-10-12T22:18:37.833899-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ts68nlgk"}}
+{"time":"2024-10-12T22:18:37.833916-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"ts68nlgk"}}
+{"time":"2024-10-12T22:18:38.046519-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-12T22:18:38.048982-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-12T22:18:39.288776-04:00","level":"INFO","msg":"stream: closing","id":"ts68nlgk"}
+{"time":"2024-10-12T22:18:39.288796-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-12T22:18:39.288836-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-12T22:18:41.175708-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ts68nlgk"}}
+{"time":"2024-10-12T22:18:41.175724-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"ts68nlgk"}}
+{"time":"2024-10-12T22:18:41.175724-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ts68nlgk"}}
+{"time":"2024-10-12T22:18:41.175905-04:00","level":"INFO","msg":"stream: closed","id":"ts68nlgk"}

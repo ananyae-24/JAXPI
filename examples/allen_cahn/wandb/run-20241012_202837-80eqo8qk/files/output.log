@@ -1,0 +1,66 @@
+[20:28:39 - main - INFO] Waiting for JIT...
+Exception ignored in: <function _xla_gc_callback at 0x1047e0d60>
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jax/_src/lib/__init__.py", line 96, in _xla_gc_callback
+    def _xla_gc_callback(*args):
+
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 40, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 32, in main
+    train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/train.py", line 114, in train_and_evaluate
+    wandb.log(log_dict, step)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 452, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 403, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 393, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1928, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1647, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1519, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 629, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/data_types/utils.py", line 54, in history_dict_to_json
+    payload[key] = val_to_json(
+                   ^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/sdk/data_types/utils.py", line 84, in val_to_json
+    if util.is_pandas_data_frame(val):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/wandb/util.py", line 459, in is_pandas_data_frame
+    import pandas as pd
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/pandas/core/api.py", line 47, in <module>
+    from pandas.core.groupby import (
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 68, in <module>
+    from pandas.core.frame import DataFrame
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/pandas/core/frame.py", line 149, in <module>
+    from pandas.core.generic import (
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/pandas/core/generic.py", line 184, in <module>
+    from pandas.core.methods.describe import describe_ndframe
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/pandas/core/methods/describe.py", line 41, in <module>
+    from pandas.io.formats.format import format_percentiles
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1131, in get_data
+KeyboardInterrupt

@@ -1,0 +1,27 @@
+[10:22:46 - main - INFO] Waiting for JIT...
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 49, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 34, in main
+    model=train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/train.py", line 102, in train_and_evaluate
+    model.state = model.step(model.state, batch)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jaxpi/models.py", line 197, in step
+    grads = grad(self.loss)(state.params, state.weights, batch, *args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jaxpi/models.py", line 148, in loss
+    losses = self.losses(params, batch, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/models.py", line 97, in losses
+    self.layer_grad_directions.append(layer_grad_directions)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AllenCahn' object has no attribute 'layer_grad_directions'
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

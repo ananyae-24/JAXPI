@@ -1,0 +1,18 @@
+{"time":"2024-10-13T10:22:44.629391-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T10:22:44.629433-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_102244-2pcywc1j/logs/debug-core.log"}
+{"time":"2024-10-13T10:22:44.629548-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T10:22:44.629555-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_102244-2pcywc1j/logs/debug-core.log"}
+{"time":"2024-10-13T10:22:44.637791-04:00","level":"INFO","msg":"created new stream","id":"2pcywc1j"}
+{"time":"2024-10-13T10:22:44.637841-04:00","level":"INFO","msg":"stream: started","id":"2pcywc1j"}
+{"time":"2024-10-13T10:22:44.637885-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"2pcywc1j"}}
+{"time":"2024-10-13T10:22:44.638075-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"2pcywc1j"}}
+{"time":"2024-10-13T10:22:44.638226-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"2pcywc1j"}}
+{"time":"2024-10-13T10:22:45.003936-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-13T10:22:45.005895-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-13T10:22:47.325608-04:00","level":"INFO","msg":"stream: closing","id":"2pcywc1j"}
+{"time":"2024-10-13T10:22:47.325643-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-13T10:22:47.325679-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-13T10:22:48.123012-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"2pcywc1j"}}
+{"time":"2024-10-13T10:22:48.122974-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"2pcywc1j"}}
+{"time":"2024-10-13T10:22:48.123005-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"2pcywc1j"}}
+{"time":"2024-10-13T10:22:48.123606-04:00","level":"INFO","msg":"stream: closed","id":"2pcywc1j"}

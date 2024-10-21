@@ -1,0 +1,27 @@
+[02:29:27 - main - INFO] Waiting for JIT...
+[02:29:36 - main - INFO] --------------------------
+[02:29:36 - main - INFO] Iter:   0    Time: 9.219
+[02:29:36 - main - INFO] -----------  -------------
+[02:29:36 - main - INFO] ics_loss     1.239e+00
+[02:29:36 - main - INFO] res_loss     5.595e+00
+[02:29:36 - main - INFO] l2_error     2.619e+00
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/main.py", line 40, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/main.py", line 32, in main
+    train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/train.py", line 118, in train_and_evaluate
+    batch = next(res_sampler)
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jaxpi/samplers.py", line 20, in __getitem__
+    batch = self.data_generation(keys)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jax/_src/api.py", line 1831, in <lambda>
+    lambda x, s: pxla.shard_args([s], [None], [x])[0],
+
+KeyboardInterrupt

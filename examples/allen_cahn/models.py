@@ -1,6 +1,7 @@
 from functools import partial
 
 import jax
+jax.disable_jit(disable=True)
 import jax.numpy as jnp
 from jax import lax, jit, grad, vmap
 from jax.tree_util import tree_map
@@ -8,21 +9,18 @@ from jax.tree_util import tree_map
 from jaxpi.models import ForwardIVP
 from jaxpi.evaluator import BaseEvaluator
 from jaxpi.utils import ntk_fn, flatten_pytree
-
 from matplotlib import pyplot as plt
 
 
 class AllenCahn(ForwardIVP):
     def __init__(self, config, u0, t_star, x_star):
         super().__init__(config)
-
         self.u0 = u0
         self.t_star = t_star
         self.x_star = x_star
 
         self.t0 = t_star[0]
         self.t1 = t_star[-1]
-
         # Predictions over a grid
         self.u_pred_fn = vmap(vmap(self.u_net, (None, None, 0)), (None, 0, None))
         self.r_pred_fn = vmap(vmap(self.r_net, (None, None, 0)), (None, 0, None))
@@ -50,6 +48,21 @@ class AllenCahn(ForwardIVP):
         w = lax.stop_gradient(jnp.exp(-self.tol * (self.M @ l)))
         return l, w
 
+    def compute_grads_(self,params, batch):
+        # Ensure vmap is applied correctly and use `jax.device_get`
+        grads_ics = jax.device_get(
+            lax.stop_gradient(
+                grad(lambda p: jnp.mean((self.u0 - vmap(self.u_net, (None, None, 0))(p, self.t0, self.x_star)) ** 2))(params)
+            )
+        )
+
+        grads_res = jax.device_get(
+            lax.stop_gradient(
+                grad(lambda p: jnp.mean((vmap(self.r_net, (None, 0, 0))(p, batch[:, 0], batch[:, 1])) ** 2))(params)
+            )
+        )
+        
+        return grads_ics, grads_res
     @partial(jit, static_argnums=(0,))
     def losses(self, params, batch):
         # Initial condition loss
@@ -63,7 +76,6 @@ class AllenCahn(ForwardIVP):
         else:
             r_pred = vmap(self.r_net, (None, 0, 0))(params, batch[:, 0], batch[:, 1])
             res_loss = jnp.mean((r_pred) ** 2)
-
         loss_dict = {"ics": ics_loss, "res": res_loss}
         return loss_dict
 
@@ -105,7 +117,7 @@ class AllenCahn(ForwardIVP):
 class AllenCanhEvaluator(BaseEvaluator):
     def __init__(self, config, model):
         super().__init__(config, model)
-
+        self.layer_grad_directions=[]
     def log_errors(self, params, u_ref):
         l2_error = self.model.compute_l2_error(params, u_ref)
         self.log_dict["l2_error"] = l2_error
@@ -116,10 +128,26 @@ class AllenCanhEvaluator(BaseEvaluator):
         plt.imshow(u_pred.T, cmap="jet")
         self.log_dict["u_pred"] = fig
         plt.close()
+    def Store_layer_directions(self,state,batch):
+        grads_ics,grads_res=self.model.compute_grads_(state.params, batch)
+            # Compare gradients layer by layer
+        layer_grad_directions = {}
+        for layer in state.params["params"].keys():
+                if "dense" not in layer.lower():
+                    continue
+                grads_ics_layer = grads_ics["params"][layer]['kernel'][1]
+                grads_res_layer = grads_res["params"][layer]['kernel'][1]
+            
+                # Calculate magnitudes (L2 norms)
+                norm_ics = jnp.linalg.norm(grads_ics_layer)
+                norm_res = jnp.linalg.norm(grads_res_layer)
+                dot_product = jnp.vdot(grads_ics_layer, grads_res_layer)
 
+                grad_direction = dot_product / (norm_ics * norm_res)
+                layer_grad_directions[layer] = jax.device_get(grad_direction).tolist()
+        self.layer_grad_directions.append(layer_grad_directions)
     def __call__(self, state, batch, u_ref):
         self.log_dict = super().__call__(state, batch)
-
         if self.config.weighting.use_causal:
             _, causal_weight = self.model.res_and_w(state.params, batch)
             self.log_dict["cas_weight"] = causal_weight.min()

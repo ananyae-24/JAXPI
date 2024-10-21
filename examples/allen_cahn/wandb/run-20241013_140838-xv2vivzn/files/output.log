@@ -1,0 +1,299 @@
+[14:08:39 - main - INFO] Waiting for JIT...
+[14:08:50 - main - INFO] ---------------------------
+[14:08:50 - main - INFO] Iter:   0    Time: 10.515
+[14:08:50 - main - INFO] -----------  --------------
+[14:08:50 - main - INFO] ics_loss     3.909e-01
+[14:08:50 - main - INFO] res_loss     7.404e+00
+[14:08:50 - main - INFO] l2_error     1.294e+00
+[14:09:32 - main - INFO] --------------------------
+[14:09:32 - main - INFO] Iter: 100    Time: 0.733
+[14:09:32 - main - INFO] -----------  -------------
+[14:09:32 - main - INFO] ics_loss     6.337e-02
+[14:09:32 - main - INFO] res_loss     2.924e-01
+[14:09:32 - main - INFO] l2_error     1.095e+00
+[14:10:15 - main - INFO] --------------------------
+[14:10:15 - main - INFO] Iter: 200    Time: 0.881
+[14:10:15 - main - INFO] -----------  -------------
+[14:10:15 - main - INFO] ics_loss     5.038e-02
+[14:10:15 - main - INFO] res_loss     1.414e-01
+[14:10:15 - main - INFO] l2_error     9.936e-01
+[14:10:55 - main - INFO] --------------------------
+[14:10:55 - main - INFO] Iter: 300    Time: 0.682
+[14:10:55 - main - INFO] -----------  -------------
+[14:10:55 - main - INFO] ics_loss     9.560e-03
+[14:10:55 - main - INFO] res_loss     4.321e-02
+[14:10:55 - main - INFO] l2_error     9.018e-01
+[14:11:35 - main - INFO] --------------------------
+[14:11:35 - main - INFO] Iter: 400    Time: 0.680
+[14:11:35 - main - INFO] -----------  -------------
+[14:11:35 - main - INFO] ics_loss     5.938e-03
+[14:11:35 - main - INFO] res_loss     4.582e-02
+[14:11:35 - main - INFO] l2_error     8.479e-01
+[14:12:15 - main - INFO] --------------------------
+[14:12:15 - main - INFO] Iter: 500    Time: 0.670
+[14:12:15 - main - INFO] -----------  -------------
+[14:12:15 - main - INFO] ics_loss     5.172e-03
+[14:12:15 - main - INFO] res_loss     2.099e-02
+[14:12:15 - main - INFO] l2_error     8.017e-01
+[14:12:55 - main - INFO] --------------------------
+[14:12:55 - main - INFO] Iter: 600    Time: 0.665
+[14:12:55 - main - INFO] -----------  -------------
+[14:12:55 - main - INFO] ics_loss     3.871e-03
+[14:12:55 - main - INFO] res_loss     1.929e-02
+[14:12:55 - main - INFO] l2_error     7.541e-01
+[14:13:35 - main - INFO] --------------------------
+[14:13:35 - main - INFO] Iter: 700    Time: 0.689
+[14:13:35 - main - INFO] -----------  -------------
+[14:13:35 - main - INFO] ics_loss     6.668e-02
+[14:13:35 - main - INFO] res_loss     1.474e-01
+[14:13:35 - main - INFO] l2_error     1.198e+00
+[14:14:16 - main - INFO] --------------------------
+[14:14:16 - main - INFO] Iter: 800    Time: 0.687
+[14:14:16 - main - INFO] -----------  -------------
+[14:14:16 - main - INFO] ics_loss     6.879e-02
+[14:14:16 - main - INFO] res_loss     1.487e-01
+[14:14:16 - main - INFO] l2_error     1.101e+00
+[14:14:56 - main - INFO] --------------------------
+[14:14:56 - main - INFO] Iter: 900    Time: 0.666
+[14:14:56 - main - INFO] -----------  -------------
+[14:14:56 - main - INFO] ics_loss     7.216e-02
+[14:14:56 - main - INFO] res_loss     1.450e-01
+[14:14:56 - main - INFO] l2_error     1.016e+00
+I1013 14:15:36.910943 8441426496 checkpoints.py:570] Saving checkpoint at step: 1000
+I1013 14:15:36.911283 8441426496 checkpoints.py:658] Using Orbax as backend to save Flax checkpoints. For potential troubleshooting see: https://flax.readthedocs.io/en/latest/guides/training_techniques/use_checkpointing.html#orbax-as-backend-troubleshooting
+I1013 14:15:36.911468 8441426496 abstract_checkpointer.py:35] orbax-checkpoint version: 0.6.4
+I1013 14:15:36.911885 8441426496 checkpointer.py:189] [process=0] Started saving checkpoint to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000.
+I1013 14:15:36.912568 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:pre.checkpoint_1000.1
+I1013 14:15:36.913581 8441426496 atomicity.py:175] Creating tmp directory /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000.orbax-checkpoint-tmp-0
+I1013 14:15:36.914603 8441426496 checkpoint.py:134] Wrote CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728843336914232000, commit_timestamp_nsecs=None), json={"init_timestamp_nsecs": 1728843336914232000, "commit_timestamp_nsecs": null} to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000.orbax-checkpoint-tmp-0
+I1013 14:15:36.914772 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:post.checkpoint_1000.2
+I1013 14:15:36.937684 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 204.5 MiB/s (total bytes: 4.5 MiB) (time elapsed: 22 milliseconds) (per-host)
+I1013 14:15:36.963379 8441426496 future.py:88] ChainedFuture completed 2/2 futures in 0.03 seconds.
+I1013 14:15:36.963545 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/bytes_per_sec: 94.4 MiB/s (total bytes: 4.5 MiB) (time elapsed: 48 milliseconds) (per-host)
+I1013 14:15:36.963888 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:save.checkpoint_1000
+I1013 14:15:36.969405 8441426496 type_handlers.py:562] [process=0][thread=MainThread] Validating params (raw input=144, unique=72) in TensorStore KvStore: KvStore({
+  'base': {
+    'driver': 'file',
+    'path': '/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000.orbax-checkpoint-tmp-0/',
+  },
+  'cache_pool': 'cache_pool#ocdbt',
+  'config': {
+    'compression': {'id': 'zstd'},
+    'max_decoded_node_bytes': 100000000,
+    'max_inline_value_bytes': 1024,
+    'uuid': '9d464c382cee850f0a8fe2b56732ec3d',
+    'version_tree_arity_log2': 4,
+  },
+  'context': {
+    'cache_pool#ocdbt': {'total_bytes_limit': 100000000},
+    'data_copy_concurrency': {},
+    'file_io_concurrency': {'limit': 128},
+    'file_io_sync': True,
+    'ocdbt_coordinator': {},
+  },
+  'driver': 'ocdbt',
+  'experimental_read_coalescing_interval': '1ms',
+  'experimental_read_coalescing_merged_bytes': 500000000000,
+  'experimental_read_coalescing_threshold_bytes': 1000000,
+}).
+I1013 14:15:36.970237 8441426496 atomicity.py:316] Renaming /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000.orbax-checkpoint-tmp-0 to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000
+I1013 14:15:36.970467 8441426496 checkpoint.py:174] Read CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728843336914232000, commit_timestamp_nsecs=None) from /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000.orbax-checkpoint-tmp-0
+I1013 14:15:36.970797 8441426496 checkpoint.py:191] Updated CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728843336914232000, commit_timestamp_nsecs=1728843336970333000) to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000.orbax-checkpoint-tmp-0
+I1013 14:15:36.971240 8441426496 atomicity.py:518] [process=0][thread=MainThread] Finished saving checkpoint (finalized tmp dir) to `/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_1000`.
+I1013 14:15:36.971320 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:finalize.checkpoint_1000
+[14:15:40 - main - INFO] ---------------------------
+[14:15:40 - main - INFO] Iter: 1000    Time: 4.023
+[14:15:40 - main - INFO] ------------  -------------
+[14:15:40 - main - INFO] ics_loss      5.217e-02
+[14:15:40 - main - INFO] res_loss      2.130e-01
+[14:15:40 - main - INFO] l2_error      9.068e-01
+[14:16:23 - main - INFO] ---------------------------
+[14:16:23 - main - INFO] Iter: 1100    Time: 0.760
+[14:16:23 - main - INFO] ------------  -------------
+[14:16:23 - main - INFO] ics_loss      5.291e-02
+[14:16:23 - main - INFO] res_loss      7.256e-01
+[14:16:23 - main - INFO] l2_error      8.826e-01
+[14:17:03 - main - INFO] ---------------------------
+[14:17:03 - main - INFO] Iter: 1200    Time: 0.694
+[14:17:03 - main - INFO] ------------  -------------
+[14:17:03 - main - INFO] ics_loss      4.311e-02
+[14:17:03 - main - INFO] res_loss      2.756e-01
+[14:17:03 - main - INFO] l2_error      8.322e-01
+[14:17:44 - main - INFO] ---------------------------
+[14:17:44 - main - INFO] Iter: 1300    Time: 0.711
+[14:17:44 - main - INFO] ------------  -------------
+[14:17:44 - main - INFO] ics_loss      3.881e-02
+[14:17:44 - main - INFO] res_loss      2.011e-01
+[14:17:44 - main - INFO] l2_error      8.069e-01
+[14:18:25 - main - INFO] ---------------------------
+[14:18:25 - main - INFO] Iter: 1400    Time: 0.688
+[14:18:25 - main - INFO] ------------  -------------
+[14:18:25 - main - INFO] ics_loss      3.161e-02
+[14:18:25 - main - INFO] res_loss      2.220e-01
+[14:18:25 - main - INFO] l2_error      7.827e-01
+[14:19:04 - main - INFO] ---------------------------
+[14:19:04 - main - INFO] Iter: 1500    Time: 0.863
+[14:19:04 - main - INFO] ------------  -------------
+[14:19:04 - main - INFO] ics_loss      2.801e-02
+[14:19:04 - main - INFO] res_loss      1.292e-01
+[14:19:04 - main - INFO] l2_error      7.616e-01
+[14:19:45 - main - INFO] ---------------------------
+[14:19:45 - main - INFO] Iter: 1600    Time: 0.698
+[14:19:45 - main - INFO] ------------  -------------
+[14:19:45 - main - INFO] ics_loss      2.365e-02
+[14:19:45 - main - INFO] res_loss      1.619e-01
+[14:19:45 - main - INFO] l2_error      7.361e-01
+[14:20:25 - main - INFO] ---------------------------
+[14:20:25 - main - INFO] Iter: 1700    Time: 0.683
+[14:20:25 - main - INFO] ------------  -------------
+[14:20:25 - main - INFO] ics_loss      1.688e-02
+[14:20:25 - main - INFO] res_loss      1.184e-01
+[14:20:25 - main - INFO] l2_error      7.023e-01
+[14:21:06 - main - INFO] ---------------------------
+[14:21:06 - main - INFO] Iter: 1800    Time: 0.713
+[14:21:06 - main - INFO] ------------  -------------
+[14:21:06 - main - INFO] ics_loss      1.068e-02
+[14:21:06 - main - INFO] res_loss      7.006e-02
+[14:21:06 - main - INFO] l2_error      6.734e-01
+[14:21:47 - main - INFO] ---------------------------
+[14:21:47 - main - INFO] Iter: 1900    Time: 0.711
+[14:21:47 - main - INFO] ------------  -------------
+[14:21:47 - main - INFO] ics_loss      8.677e-03
+[14:21:47 - main - INFO] res_loss      4.658e-02
+[14:21:47 - main - INFO] l2_error      6.564e-01
+I1013 14:22:27.556826 8441426496 checkpoints.py:570] Saving checkpoint at step: 2000
+I1013 14:22:27.557080 8441426496 checkpoints.py:658] Using Orbax as backend to save Flax checkpoints. For potential troubleshooting see: https://flax.readthedocs.io/en/latest/guides/training_techniques/use_checkpointing.html#orbax-as-backend-troubleshooting
+I1013 14:22:27.557507 8441426496 checkpointer.py:189] [process=0] Started saving checkpoint to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2000.
+I1013 14:22:27.558521 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:pre.checkpoint_2000.4
+I1013 14:22:27.559016 8441426496 atomicity.py:175] Creating tmp directory /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2000.orbax-checkpoint-tmp-3
+I1013 14:22:27.559881 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:post.checkpoint_2000.5
+I1013 14:22:27.569991 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 490.0 MiB/s (total bytes: 4.5 MiB) (time elapsed: 9 milliseconds) (per-host)
+I1013 14:22:27.588550 8441426496 future.py:88] ChainedFuture completed 2/2 futures in 0.02 seconds.
+I1013 14:22:27.588696 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/bytes_per_sec: 162.3 MiB/s (total bytes: 4.5 MiB) (time elapsed: 27 milliseconds) (per-host)
+I1013 14:22:27.588965 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:save.checkpoint_2000
+I1013 14:22:27.595132 8441426496 type_handlers.py:562] [process=0][thread=MainThread] Validating params (raw input=144, unique=72) in TensorStore KvStore: KvStore({
+  'base': {
+    'driver': 'file',
+    'path': '/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2000.orbax-checkpoint-tmp-3/',
+  },
+  'cache_pool': 'cache_pool#ocdbt',
+  'config': {
+    'compression': {'id': 'zstd'},
+    'max_decoded_node_bytes': 100000000,
+    'max_inline_value_bytes': 1024,
+    'uuid': '06bfeeac9ed6f10cb8e21b6cdb5c0971',
+    'version_tree_arity_log2': 4,
+  },
+  'context': {
+    'cache_pool#ocdbt': {'total_bytes_limit': 100000000},
+    'data_copy_concurrency': {},
+    'file_io_concurrency': {'limit': 128},
+    'file_io_sync': True,
+    'ocdbt_coordinator': {},
+  },
+  'driver': 'ocdbt',
+  'experimental_read_coalescing_interval': '1ms',
+  'experimental_read_coalescing_merged_bytes': 500000000000,
+  'experimental_read_coalescing_threshold_bytes': 1000000,
+}).
+I1013 14:22:27.595548 8441426496 atomicity.py:316] Renaming /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2000.orbax-checkpoint-tmp-3 to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2000
+I1013 14:22:27.596073 8441426496 atomicity.py:518] [process=0][thread=MainThread] Finished saving checkpoint (finalized tmp dir) to `/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2000`.
+I1013 14:22:27.596144 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:finalize.checkpoint_2000
+[14:22:30 - main - INFO] ---------------------------
+[14:22:30 - main - INFO] Iter: 2000    Time: 3.211
+[14:22:30 - main - INFO] ------------  -------------
+[14:22:30 - main - INFO] ics_loss      7.300e-03
+[14:22:30 - main - INFO] res_loss      4.969e-02
+[14:22:30 - main - INFO] l2_error      6.404e-01
+[14:23:10 - main - INFO] ---------------------------
+[14:23:10 - main - INFO] Iter: 2100    Time: 0.681
+[14:23:10 - main - INFO] ------------  -------------
+[14:23:10 - main - INFO] ics_loss      4.304e-03
+[14:23:10 - main - INFO] res_loss      5.512e-02
+[14:23:10 - main - INFO] l2_error      6.233e-01
+[14:23:50 - main - INFO] ---------------------------
+[14:23:50 - main - INFO] Iter: 2200    Time: 0.689
+[14:23:50 - main - INFO] ------------  -------------
+[14:23:50 - main - INFO] ics_loss      3.840e-03
+[14:23:50 - main - INFO] res_loss      4.491e-02
+[14:23:50 - main - INFO] l2_error      6.086e-01
+[14:24:30 - main - INFO] ---------------------------
+[14:24:30 - main - INFO] Iter: 2300    Time: 0.687
+[14:24:30 - main - INFO] ------------  -------------
+[14:24:30 - main - INFO] ics_loss      3.308e-03
+[14:24:30 - main - INFO] res_loss      4.146e-02
+[14:24:30 - main - INFO] l2_error      5.952e-01
+[14:25:10 - main - INFO] ---------------------------
+[14:25:10 - main - INFO] Iter: 2400    Time: 0.879
+[14:25:10 - main - INFO] ------------  -------------
+[14:25:10 - main - INFO] ics_loss      2.918e-03
+[14:25:10 - main - INFO] res_loss      3.513e-02
+[14:25:10 - main - INFO] l2_error      5.819e-01
+[14:25:51 - main - INFO] ---------------------------
+[14:25:51 - main - INFO] Iter: 2500    Time: 0.769
+[14:25:51 - main - INFO] ------------  -------------
+[14:25:51 - main - INFO] ics_loss      2.770e-03
+[14:25:51 - main - INFO] res_loss      2.994e-02
+[14:25:51 - main - INFO] l2_error      5.693e-01
+[14:26:34 - main - INFO] ---------------------------
+[14:26:34 - main - INFO] Iter: 2600    Time: 0.718
+[14:26:34 - main - INFO] ------------  -------------
+[14:26:34 - main - INFO] ics_loss      2.624e-03
+[14:26:34 - main - INFO] res_loss      3.033e-02
+[14:26:34 - main - INFO] l2_error      5.556e-01
+[14:27:15 - main - INFO] ---------------------------
+[14:27:15 - main - INFO] Iter: 2700    Time: 0.724
+[14:27:15 - main - INFO] ------------  -------------
+[14:27:15 - main - INFO] ics_loss      2.479e-03
+[14:27:15 - main - INFO] res_loss      1.857e-02
+[14:27:15 - main - INFO] l2_error      5.416e-01
+[14:27:57 - main - INFO] ---------------------------
+[14:27:57 - main - INFO] Iter: 2800    Time: 0.718
+[14:27:57 - main - INFO] ------------  -------------
+[14:27:57 - main - INFO] ics_loss      1.905e-03
+[14:27:57 - main - INFO] res_loss      2.069e-02
+[14:27:57 - main - INFO] l2_error      5.282e-01
+[14:28:37 - main - INFO] ---------------------------
+[14:28:37 - main - INFO] Iter: 2900    Time: 0.717
+[14:28:37 - main - INFO] ------------  -------------
+[14:28:37 - main - INFO] ics_loss      1.670e-03
+[14:28:37 - main - INFO] res_loss      1.782e-02
+[14:28:37 - main - INFO] l2_error      5.154e-01
+I1013 14:29:19.280762 8441426496 checkpoints.py:570] Saving checkpoint at step: 3000
+I1013 14:29:19.280965 8441426496 checkpoints.py:658] Using Orbax as backend to save Flax checkpoints. For potential troubleshooting see: https://flax.readthedocs.io/en/latest/guides/training_techniques/use_checkpointing.html#orbax-as-backend-troubleshooting
+I1013 14:29:19.281269 8441426496 checkpointer.py:189] [process=0] Started saving checkpoint to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_3000.
+I1013 14:29:19.282505 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:pre.checkpoint_3000.7
+I1013 14:29:19.283057 8441426496 atomicity.py:175] Creating tmp directory /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_3000.orbax-checkpoint-tmp-6
+I1013 14:29:19.284017 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:post.checkpoint_3000.8
+I1013 14:29:19.293206 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 529.8 MiB/s (total bytes: 4.5 MiB) (time elapsed: 8 milliseconds) (per-host)
+I1013 14:29:19.315823 8441426496 future.py:88] ChainedFuture completed 2/2 futures in 0.02 seconds.
+I1013 14:29:19.316020 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/bytes_per_sec: 144.7 MiB/s (total bytes: 4.5 MiB) (time elapsed: 31 milliseconds) (per-host)
+I1013 14:29:19.316305 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:save.checkpoint_3000
+I1013 14:29:19.321871 8441426496 type_handlers.py:562] [process=0][thread=MainThread] Validating params (raw input=144, unique=72) in TensorStore KvStore: KvStore({
+  'base': {
+    'driver': 'file',
+    'path': '/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_3000.orbax-checkpoint-tmp-6/',
+  },
+  'cache_pool': 'cache_pool#ocdbt',
+  'config': {
+    'compression': {'id': 'zstd'},
+    'max_decoded_node_bytes': 100000000,
+    'max_inline_value_bytes': 1024,
+    'uuid': '30466f1d8ac3dcf112c887865a730f4b',
+    'version_tree_arity_log2': 4,
+  },
+  'context': {
+    'cache_pool#ocdbt': {'total_bytes_limit': 100000000},
+    'data_copy_concurrency': {},
+    'file_io_concurrency': {'limit': 128},
+    'file_io_sync': True,
+    'ocdbt_coordinator': {},
+  },
+  'driver': 'ocdbt',
+  'experimental_read_coalescing_interval': '1ms',
+  'experimental_read_coalescing_merged_bytes': 500000000000,
+  'experimental_read_coalescing_threshold_bytes': 1000000,
+}).
+I1013 14:29:19.322474 8441426496 atomicity.py:316] Renaming /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_3000.orbax-checkpoint-tmp-6 to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_3000
+I1013 14:29:19.323084 8441426496 atomicity.py:518] [process=0][thread=MainThread] Finished saving checkpoint (finalized tmp dir) to `/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_3000`.
+I1013 14:29:19.323160 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:finalize.checkpoint_3000

@@ -1,0 +1,19 @@
+{"time":"2024-10-13T10:24:01.825634-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T10:24:01.82575-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_102401-kitg3m3o/logs/debug-core.log"}
+{"time":"2024-10-13T10:24:01.825912-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T10:24:01.825924-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_102401-kitg3m3o/logs/debug-core.log"}
+{"time":"2024-10-13T10:24:01.837165-04:00","level":"INFO","msg":"created new stream","id":"kitg3m3o"}
+{"time":"2024-10-13T10:24:01.837257-04:00","level":"INFO","msg":"stream: started","id":"kitg3m3o"}
+{"time":"2024-10-13T10:24:01.837281-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"kitg3m3o"}}
+{"time":"2024-10-13T10:24:01.837323-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"kitg3m3o"}}
+{"time":"2024-10-13T10:24:01.837542-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"kitg3m3o"}}
+{"time":"2024-10-13T10:24:02.131083-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-13T10:24:02.133872-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-13T10:24:18.113715-04:00","level":"INFO","msg":"stream: closing","id":"kitg3m3o"}
+{"time":"2024-10-13T10:24:18.113744-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-13T10:24:18.114014-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-13T10:24:19.173574-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-13T10:24:22.181153-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"kitg3m3o"}}
+{"time":"2024-10-13T10:24:22.181201-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"kitg3m3o"}}
+{"time":"2024-10-13T10:24:22.181181-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"kitg3m3o"}}
+{"time":"2024-10-13T10:24:22.181515-04:00","level":"INFO","msg":"stream: closed","id":"kitg3m3o"}

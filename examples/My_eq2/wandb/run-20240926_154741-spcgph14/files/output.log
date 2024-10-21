@@ -1,0 +1,23 @@
+[15:47:42 - main - INFO] Use physics-informed initialization...
+(40401, 256)
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/main.py", line 40, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/main.py", line 32, in main
+    train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/train.py", line 98, in train_and_evaluate
+    coeffs, residuals, rank, s = jnp.linalg.lstsq(
+                                 ^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jax/_src/numpy/linalg.py", line 1446, in lstsq
+    return _jit_lstsq(a, b, rcond)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jax/_src/numpy/linalg.py", line 1367, in _lstsq
+    raise ValueError("Leading dimensions of input arrays must match")
+ValueError: Leading dimensions of input arrays must match
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

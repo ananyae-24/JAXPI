@@ -1,0 +1,26 @@
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Current SDK version is 0.18.1
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Configure stats pid to 22880
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Loading settings from /Users/ananyaebhartari/.config/wandb/settings
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Loading settings from /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/heat/wandb/settings
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Loading settings from environment variables: {}
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': 'examples/heat/main.py', 'program_abspath': '/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/heat/main.py', 'program': '/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/heat/main.py'}
+2024-09-25 00:28:27,889 INFO    MainThread:22880 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-09-25 00:28:27,890 INFO    MainThread:22880 [wandb_init.py:_log_setup():532] Logging user logs to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/heat/wandb/run-20240925_002827-gduz3xov/logs/debug.log
+2024-09-25 00:28:27,890 INFO    MainThread:22880 [wandb_init.py:_log_setup():533] Logging internal logs to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/heat/wandb/run-20240925_002827-gduz3xov/logs/debug-internal.log
+2024-09-25 00:28:27,890 INFO    MainThread:22880 [wandb_init.py:init():616] calling init triggers
+2024-09-25 00:28:27,890 INFO    MainThread:22880 [wandb_init.py:init():623] wandb.init called with sweep_config: {}
+config: {}
+2024-09-25 00:28:27,890 INFO    MainThread:22880 [wandb_init.py:init():666] starting backend
+2024-09-25 00:28:27,890 INFO    MainThread:22880 [wandb_init.py:init():670] setting up manager
+2024-09-25 00:28:27,892 INFO    MainThread:22880 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-09-25 00:28:27,893 INFO    MainThread:22880 [wandb_init.py:init():678] backend started and connected
+2024-09-25 00:28:27,897 INFO    MainThread:22880 [wandb_init.py:init():773] updated telemetry
+2024-09-25 00:28:27,916 INFO    MainThread:22880 [wandb_init.py:init():806] communicating run to backend with 90.0 second timeout
+2024-09-25 00:28:28,159 INFO    MainThread:22880 [wandb_init.py:init():857] starting run threads in backend
+2024-09-25 00:28:28,217 INFO    MainThread:22880 [wandb_run.py:_console_start():2459] atexit reg
+2024-09-25 00:28:28,218 INFO    MainThread:22880 [wandb_run.py:_redirect():2307] redirect: wrap_raw
+2024-09-25 00:28:28,218 INFO    MainThread:22880 [wandb_run.py:_redirect():2372] Wrapping output streams.
+2024-09-25 00:28:28,218 INFO    MainThread:22880 [wandb_run.py:_redirect():2397] Redirects installed.
+2024-09-25 00:28:28,220 INFO    MainThread:22880 [wandb_init.py:init():900] run started, returning control to user process
+2024-09-25 01:08:13,924 WARNING MsgRouterThr:22880 [router.py:message_loop():77] message_loop has been closed

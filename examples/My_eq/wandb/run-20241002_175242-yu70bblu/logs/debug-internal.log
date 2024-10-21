@@ -1,0 +1,21 @@
+{"time":"2024-10-02T17:52:42.742392-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-02T17:52:42.742421-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/wandb/run-20241002_175242-yu70bblu/logs/debug-core.log"}
+{"time":"2024-10-02T17:52:42.74248-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-02T17:52:42.742485-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/wandb/run-20241002_175242-yu70bblu/logs/debug-core.log"}
+{"time":"2024-10-02T17:52:42.758709-04:00","level":"INFO","msg":"created new stream","id":"yu70bblu"}
+{"time":"2024-10-02T17:52:42.764277-04:00","level":"INFO","msg":"stream: started","id":"yu70bblu"}
+{"time":"2024-10-02T17:52:42.764345-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"yu70bblu"}}
+{"time":"2024-10-02T17:52:42.764413-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"yu70bblu"}}
+{"time":"2024-10-02T17:52:42.769412-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"yu70bblu"}}
+{"time":"2024-10-02T17:52:43.009149-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-02T17:52:43.010661-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-02T20:00:13.905977-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/ananyae-university-of-pennsylvania/PINN-Inverse/yu70bblu/file_stream"}
+{"time":"2024-10-02T20:26:47.151979-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-02T20:30:47.333724-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-02T21:02:24.422492-04:00","level":"INFO","msg":"stream: closing","id":"yu70bblu"}
+{"time":"2024-10-02T21:02:24.422522-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-02T21:02:24.422692-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-02T21:02:25.076719-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"yu70bblu"}}
+{"time":"2024-10-02T21:02:25.07675-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"yu70bblu"}}
+{"time":"2024-10-02T21:02:25.076989-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"yu70bblu"}}
+{"time":"2024-10-02T21:02:25.077149-04:00","level":"INFO","msg":"stream: closed","id":"yu70bblu"}

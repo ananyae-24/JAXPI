@@ -1,0 +1,262 @@
+[22:32:08 - main - INFO] Waiting for JIT...
+[22:32:53 - main - INFO] ---------------------------
+[22:32:53 - main - INFO] Iter:   0    Time: 44.286
+[22:32:53 - main - INFO] -----------  --------------
+[22:32:53 - main - INFO] ics_loss     3.909e-01
+[22:32:53 - main - INFO] res_loss     2.781e-01
+[22:32:53 - main - INFO] l2_error     1.294e+00
+[22:33:29 - main - INFO] --------------------------
+[22:33:29 - main - INFO] Iter: 100    Time: 1.084
+[22:33:29 - main - INFO] -----------  -------------
+[22:33:29 - main - INFO] ics_loss     4.209e-03
+[22:33:29 - main - INFO] res_loss     3.794e-02
+[22:33:29 - main - INFO] l2_error     9.016e-01
+[22:34:04 - main - INFO] --------------------------
+[22:34:04 - main - INFO] Iter: 200    Time: 1.078
+[22:34:04 - main - INFO] -----------  -------------
+[22:34:04 - main - INFO] ics_loss     2.220e-03
+[22:34:04 - main - INFO] res_loss     9.262e-03
+[22:34:04 - main - INFO] l2_error     7.186e-01
+[22:34:40 - main - INFO] --------------------------
+[22:34:40 - main - INFO] Iter: 300    Time: 1.078
+[22:34:40 - main - INFO] -----------  -------------
+[22:34:40 - main - INFO] ics_loss     3.884e-03
+[22:34:40 - main - INFO] res_loss     2.644e-02
+[22:34:40 - main - INFO] l2_error     6.932e-01
+[22:35:16 - main - INFO] --------------------------
+[22:35:16 - main - INFO] Iter: 400    Time: 1.076
+[22:35:16 - main - INFO] -----------  -------------
+[22:35:16 - main - INFO] ics_loss     2.383e-03
+[22:35:16 - main - INFO] res_loss     2.399e-02
+[22:35:16 - main - INFO] l2_error     6.670e-01
+[22:35:52 - main - INFO] --------------------------
+[22:35:52 - main - INFO] Iter: 500    Time: 1.084
+[22:35:52 - main - INFO] -----------  -------------
+[22:35:52 - main - INFO] ics_loss     1.299e-03
+[22:35:52 - main - INFO] res_loss     2.258e-02
+[22:35:52 - main - INFO] l2_error     6.524e-01
+[22:36:28 - main - INFO] --------------------------
+[22:36:28 - main - INFO] Iter: 600    Time: 1.087
+[22:36:28 - main - INFO] -----------  -------------
+[22:36:28 - main - INFO] ics_loss     2.023e-03
+[22:36:28 - main - INFO] res_loss     3.195e-02
+[22:36:28 - main - INFO] l2_error     6.399e-01
+[22:37:04 - main - INFO] --------------------------
+[22:37:04 - main - INFO] Iter: 700    Time: 1.098
+[22:37:04 - main - INFO] -----------  -------------
+[22:37:04 - main - INFO] ics_loss     4.389e-03
+[22:37:04 - main - INFO] res_loss     3.398e-02
+[22:37:04 - main - INFO] l2_error     6.419e-01
+[22:37:40 - main - INFO] --------------------------
+[22:37:40 - main - INFO] Iter: 800    Time: 1.091
+[22:37:40 - main - INFO] -----------  -------------
+[22:37:40 - main - INFO] ics_loss     1.950e-03
+[22:37:40 - main - INFO] res_loss     3.401e-02
+[22:37:40 - main - INFO] l2_error     6.340e-01
+[22:38:16 - main - INFO] --------------------------
+[22:38:16 - main - INFO] Iter: 900    Time: 1.088
+[22:38:16 - main - INFO] -----------  -------------
+[22:38:16 - main - INFO] ics_loss     3.521e-03
+[22:38:16 - main - INFO] res_loss     3.107e-02
+[22:38:16 - main - INFO] l2_error     6.386e-01
+[22:39:23 - main - INFO] ----------------------------
+[22:39:23 - main - INFO] Iter: 1000    Time: 31.136
+[22:39:23 - main - INFO] ------------  --------------
+[22:39:23 - main - INFO] ics_loss      8.616e-03
+[22:39:23 - main - INFO] res_loss      3.235e-02
+[22:39:23 - main - INFO] l2_error      6.240e-01
+[22:39:59 - main - INFO] ---------------------------
+[22:39:59 - main - INFO] Iter: 1100    Time: 1.107
+[22:39:59 - main - INFO] ------------  -------------
+[22:39:59 - main - INFO] ics_loss      4.307e-03
+[22:39:59 - main - INFO] res_loss      3.079e-02
+[22:39:59 - main - INFO] l2_error      6.121e-01
+[22:40:35 - main - INFO] ---------------------------
+[22:40:35 - main - INFO] Iter: 1200    Time: 1.091
+[22:40:35 - main - INFO] ------------  -------------
+[22:40:35 - main - INFO] ics_loss      2.653e-03
+[22:40:35 - main - INFO] res_loss      2.777e-02
+[22:40:35 - main - INFO] l2_error      6.363e-01
+[22:41:10 - main - INFO] ---------------------------
+[22:41:10 - main - INFO] Iter: 1300    Time: 1.067
+[22:41:10 - main - INFO] ------------  -------------
+[22:41:10 - main - INFO] ics_loss      2.143e-03
+[22:41:10 - main - INFO] res_loss      3.235e-02
+[22:41:10 - main - INFO] l2_error      6.176e-01
+[22:41:46 - main - INFO] ---------------------------
+[22:41:46 - main - INFO] Iter: 1400    Time: 1.081
+[22:41:46 - main - INFO] ------------  -------------
+[22:41:46 - main - INFO] ics_loss      1.367e-03
+[22:41:46 - main - INFO] res_loss      3.170e-02
+[22:41:46 - main - INFO] l2_error      6.088e-01
+[22:42:23 - main - INFO] ---------------------------
+[22:42:23 - main - INFO] Iter: 1500    Time: 1.082
+[22:42:23 - main - INFO] ------------  -------------
+[22:42:23 - main - INFO] ics_loss      2.656e-02
+[22:42:23 - main - INFO] res_loss      3.506e-02
+[22:42:23 - main - INFO] l2_error      6.570e-01
+[22:43:00 - main - INFO] ---------------------------
+[22:43:00 - main - INFO] Iter: 1600    Time: 1.101
+[22:43:00 - main - INFO] ------------  -------------
+[22:43:00 - main - INFO] ics_loss      4.961e-03
+[22:43:00 - main - INFO] res_loss      3.076e-02
+[22:43:00 - main - INFO] l2_error      5.999e-01
+[22:43:37 - main - INFO] ---------------------------
+[22:43:37 - main - INFO] Iter: 1700    Time: 1.100
+[22:43:37 - main - INFO] ------------  -------------
+[22:43:37 - main - INFO] ics_loss      2.443e-03
+[22:43:37 - main - INFO] res_loss      2.927e-02
+[22:43:37 - main - INFO] l2_error      5.899e-01
+[22:44:14 - main - INFO] ---------------------------
+[22:44:14 - main - INFO] Iter: 1800    Time: 1.136
+[22:44:14 - main - INFO] ------------  -------------
+[22:44:14 - main - INFO] ics_loss      2.567e-03
+[22:44:14 - main - INFO] res_loss      2.389e-02
+[22:44:14 - main - INFO] l2_error      6.065e-01
+[22:44:51 - main - INFO] ---------------------------
+[22:44:51 - main - INFO] Iter: 1900    Time: 1.158
+[22:44:51 - main - INFO] ------------  -------------
+[22:44:51 - main - INFO] ics_loss      2.247e-03
+[22:44:51 - main - INFO] res_loss      3.201e-02
+[22:44:51 - main - INFO] l2_error      6.155e-01
+[22:46:08 - main - INFO] ----------------------------
+[22:46:08 - main - INFO] Iter: 2000    Time: 40.257
+[22:46:08 - main - INFO] ------------  --------------
+[22:46:08 - main - INFO] ics_loss      1.680e-03
+[22:46:08 - main - INFO] res_loss      3.156e-02
+[22:46:08 - main - INFO] l2_error      6.204e-01
+[22:46:45 - main - INFO] ---------------------------
+[22:46:45 - main - INFO] Iter: 2100    Time: 1.089
+[22:46:45 - main - INFO] ------------  -------------
+[22:46:45 - main - INFO] ics_loss      2.591e-03
+[22:46:45 - main - INFO] res_loss      2.745e-02
+[22:46:45 - main - INFO] l2_error      5.670e-01
+[22:47:22 - main - INFO] ---------------------------
+[22:47:22 - main - INFO] Iter: 2200    Time: 1.082
+[22:47:22 - main - INFO] ------------  -------------
+[22:47:22 - main - INFO] ics_loss      6.002e-04
+[22:47:22 - main - INFO] res_loss      2.051e-02
+[22:47:22 - main - INFO] l2_error      5.765e-01
+[22:47:58 - main - INFO] ---------------------------
+[22:47:58 - main - INFO] Iter: 2300    Time: 1.085
+[22:47:58 - main - INFO] ------------  -------------
+[22:47:58 - main - INFO] ics_loss      7.349e-04
+[22:47:58 - main - INFO] res_loss      2.317e-02
+[22:47:58 - main - INFO] l2_error      5.921e-01
+[22:48:34 - main - INFO] ---------------------------
+[22:48:34 - main - INFO] Iter: 2400    Time: 1.076
+[22:48:34 - main - INFO] ------------  -------------
+[22:48:34 - main - INFO] ics_loss      1.220e-03
+[22:48:34 - main - INFO] res_loss      2.293e-02
+[22:48:34 - main - INFO] l2_error      6.058e-01
+[22:49:11 - main - INFO] ---------------------------
+[22:49:11 - main - INFO] Iter: 2500    Time: 1.088
+[22:49:11 - main - INFO] ------------  -------------
+[22:49:11 - main - INFO] ics_loss      4.049e-04
+[22:49:11 - main - INFO] res_loss      1.865e-02
+[22:49:11 - main - INFO] l2_error      5.819e-01
+[22:49:47 - main - INFO] ---------------------------
+[22:49:47 - main - INFO] Iter: 2600    Time: 1.096
+[22:49:47 - main - INFO] ------------  -------------
+[22:49:47 - main - INFO] ics_loss      1.790e-03
+[22:49:47 - main - INFO] res_loss      1.610e-02
+[22:49:47 - main - INFO] l2_error      5.912e-01
+[22:50:24 - main - INFO] ---------------------------
+[22:50:24 - main - INFO] Iter: 2700    Time: 1.093
+[22:50:24 - main - INFO] ------------  -------------
+[22:50:24 - main - INFO] ics_loss      5.792e-04
+[22:50:24 - main - INFO] res_loss      2.256e-02
+[22:50:24 - main - INFO] l2_error      5.734e-01
+[22:51:00 - main - INFO] ---------------------------
+[22:51:00 - main - INFO] Iter: 2800    Time: 1.118
+[22:51:00 - main - INFO] ------------  -------------
+[22:51:00 - main - INFO] ics_loss      5.888e-04
+[22:51:00 - main - INFO] res_loss      3.973e-03
+[22:51:00 - main - INFO] l2_error      5.776e-01
+[22:51:36 - main - INFO] ---------------------------
+[22:51:36 - main - INFO] Iter: 2900    Time: 1.103
+[22:51:36 - main - INFO] ------------  -------------
+[22:51:36 - main - INFO] ics_loss      3.168e-04
+[22:51:36 - main - INFO] res_loss      9.213e-03
+[22:51:36 - main - INFO] l2_error      5.453e-01
+I0924 22:52:12.554886 8441426496 checkpoints.py:570] Saving checkpoint at step: 3000
+I0924 22:52:12.565365 8441426496 checkpoints.py:658] Using Orbax as backend to save Flax checkpoints. For potential troubleshooting see: https://flax.readthedocs.io/en/latest/guides/training_techniques/use_checkpointing.html#orbax-as-backend-troubleshooting
+I0924 22:52:12.571440 8441426496 abstract_checkpointer.py:35] orbax-checkpoint version: 0.6.4
+I0924 22:52:12.577836 8441426496 checkpointer.py:189] [process=0] Started saving checkpoint to default/ckpt/checkpoint_3000.
+I0924 22:52:12.593228 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:pre.checkpoint_3000.1
+I0924 22:52:12.596271 8441426496 atomicity.py:175] Creating tmp directory default/ckpt/checkpoint_3000.orbax-checkpoint-tmp-0
+I0924 22:52:12.599870 8441426496 checkpoint.py:134] Wrote CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1727232732596752000, commit_timestamp_nsecs=None), json={"init_timestamp_nsecs": 1727232732596752000, "commit_timestamp_nsecs": null} to default/ckpt/checkpoint_3000.orbax-checkpoint-tmp-0
+I0924 22:52:12.600008 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:post.checkpoint_3000.2
+I0924 22:52:12.623283 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 214.4 MiB/s (total bytes: 4.5 MiB) (time elapsed: 21 milliseconds) (per-host)
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 40, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 32, in main
+    train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/train.py", line 126, in train_and_evaluate
+    save_checkpoint(model.state, path, keep=config.saving.num_keep_ckpts)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jaxpi/utils.py", line 45, in save_checkpoint
+    checkpoints.save_checkpoint(workdir, state, step=step, keep=keep)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/flax/training/checkpoints.py", line 693, in save_checkpoint
+    orbax_checkpointer.save(
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/checkpointer.py", line 204, in save
+    self._handler.save(tmpdir.get(), args=ckpt_args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/pytree_checkpoint_handler.py", line 566, in save
+    self._handler_impl.save(directory, args=args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/base_pytree_checkpoint_handler.py", line 501, in save
+    asyncio.run(async_save(directory, *args, **kwargs))
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/base_pytree_checkpoint_handler.py", line 499, in async_save
+    f.result()  # Block on result.
+    ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/future.py", line 78, in result
+    f.result(timeout=time_remaining)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/type_handlers.py", line 472, in result
+    return self._t.join(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/future.py", line 62, in join
+    raise self._exception
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/future.py", line 55, in run
+    super().run()
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/type_handlers.py", line 467, in <lambda>
+    target=lambda: asyncio.run(coro),
+                   ^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/type_handlers.py", line 831, in _background_serialize
+    tspec = self._get_json_tspec_write(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/type_handlers.py", line 771, in _get_json_tspec_write
+    return get_json_tspec_write(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/type_handlers.py", line 315, in get_json_tspec_write
+    tspec = _get_json_tspec(
+            ^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/type_handlers.py", line 268, in _get_json_tspec
+    kvstore_tspec = ts_utils.build_kvstore_tspec(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/orbax/checkpoint/_src/serialization/tensorstore_utils.py", line 92, in build_kvstore_tspec
+    raise ValueError(f'Checkpoint path should be absolute. Got {directory}')
+ValueError: Checkpoint path should be absolute. Got default/ckpt/checkpoint_3000.orbax-checkpoint-tmp-0

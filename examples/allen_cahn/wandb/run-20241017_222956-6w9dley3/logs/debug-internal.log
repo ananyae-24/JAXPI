@@ -1,0 +1,42 @@
+{"time":"2024-10-17T22:29:56.415739-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-17T22:29:56.415826-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241017_222956-6w9dley3/logs/debug-core.log"}
+{"time":"2024-10-17T22:29:56.416009-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-17T22:29:56.416025-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241017_222956-6w9dley3/logs/debug-core.log"}
+{"time":"2024-10-17T22:29:56.424584-04:00","level":"INFO","msg":"created new stream","id":"6w9dley3"}
+{"time":"2024-10-17T22:29:56.424641-04:00","level":"INFO","msg":"stream: started","id":"6w9dley3"}
+{"time":"2024-10-17T22:29:56.424671-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6w9dley3"}}
+{"time":"2024-10-17T22:29:56.424716-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"6w9dley3"}}
+{"time":"2024-10-17T22:29:56.424669-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6w9dley3"}}
+{"time":"2024-10-17T22:29:56.899718-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-17T22:29:56.901524-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-17T23:38:39.015107-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T00:30:39.246727-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T01:03:33.191766-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T01:47:13.878179-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T02:03:26.835892-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T02:20:44.504167-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T03:49:30.773081-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T04:06:13.524936-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T04:23:38.110595-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T04:57:44.629711-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T05:41:52.900767-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T05:54:22.248658-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T06:11:27.003445-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T06:27:45.38519-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T07:16:19.289362-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T07:42:49.395944-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T07:58:54.717652-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T08:43:50.221487-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:01:58.540102-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:02:31.270378-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:02:32.501034-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:02:52.704512-04:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: signal: killed"}
+{"time":"2024-10-18T09:03:06.037474-04:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: signal: killed"}
+{"time":"2024-10-18T09:03:06.06137-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:03:11.006044-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:03:14.646912-04:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: signal: killed"}
+{"time":"2024-10-18T09:03:46.550668-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:03:51.910189-04:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: signal: killed"}
+{"time":"2024-10-18T09:03:51.915676-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-18T09:45:04.448013-04:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: signal: killed"}
+{"time":"2024-10-18T09:45:38.435663-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}

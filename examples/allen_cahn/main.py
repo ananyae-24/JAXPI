@@ -11,9 +11,12 @@ from absl import logging
 from ml_collections import config_flags
 
 import jax
-
+# jax.config.update("jax_enable_x64", True) 
+# jax.config.update("jax_jit", False)
+jax.disable_jit(disable=True)
 import train
 import eval
+
 
 FLAGS = flags.FLAGS
 
@@ -30,7 +33,6 @@ config_flags.DEFINE_config_file(
 def main(argv):
     if FLAGS.config.mode == "train":
         train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
-
     elif FLAGS.config.mode == "eval":
         eval.evaluate(FLAGS.config, FLAGS.workdir)
 

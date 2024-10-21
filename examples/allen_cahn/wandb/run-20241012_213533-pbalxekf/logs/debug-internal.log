@@ -1,0 +1,18 @@
+{"time":"2024-10-12T21:35:33.844673-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T21:35:33.844717-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_213533-pbalxekf/logs/debug-core.log"}
+{"time":"2024-10-12T21:35:33.844817-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T21:35:33.844823-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_213533-pbalxekf/logs/debug-core.log"}
+{"time":"2024-10-12T21:35:33.848725-04:00","level":"INFO","msg":"created new stream","id":"pbalxekf"}
+{"time":"2024-10-12T21:35:33.848753-04:00","level":"INFO","msg":"stream: started","id":"pbalxekf"}
+{"time":"2024-10-12T21:35:33.848775-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"pbalxekf"}}
+{"time":"2024-10-12T21:35:33.84876-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"pbalxekf"}}
+{"time":"2024-10-12T21:35:33.848774-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"pbalxekf"}}
+{"time":"2024-10-12T21:35:34.059519-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-12T21:35:34.060378-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-12T21:35:48.818664-04:00","level":"INFO","msg":"stream: closing","id":"pbalxekf"}
+{"time":"2024-10-12T21:35:48.818684-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-12T21:35:48.818777-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-12T21:35:49.574747-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"pbalxekf"}}
+{"time":"2024-10-12T21:35:49.57489-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"pbalxekf"}}
+{"time":"2024-10-12T21:35:49.574925-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"pbalxekf"}}
+{"time":"2024-10-12T21:35:49.575498-04:00","level":"INFO","msg":"stream: closed","id":"pbalxekf"}

@@ -1,0 +1,52 @@
+[10:51:30 - main - INFO] Waiting for JIT...
+{'Dense_0': array(0.25182843, dtype=float32), 'Dense_1': array(0.2954843, dtype=float32), 'Dense_2': array(0.15772223, dtype=float32), 'Dense_3': array(0.21121626, dtype=float32), 'Dense_4': array(0.25243732, dtype=float32), 'Dense_5': array(0.28196055, dtype=float32), 'Dense_6': array(0.3211736, dtype=float32)}
+[10:51:41 - main - INFO] ---------------------------
+[10:51:41 - main - INFO] Iter:   0    Time: 11.016
+[10:51:41 - main - INFO] -----------  --------------
+[10:51:41 - main - INFO] ics_loss     3.909e-01
+[10:51:41 - main - INFO] res_loss     7.404e+00
+[10:51:41 - main - INFO] l2_error     1.294e+00
+I1013 10:51:43.101532 8441426496 checkpoints.py:570] Saving checkpoint at step: 2
+I1013 10:51:43.101862 8441426496 checkpoints.py:658] Using Orbax as backend to save Flax checkpoints. For potential troubleshooting see: https://flax.readthedocs.io/en/latest/guides/training_techniques/use_checkpointing.html#orbax-as-backend-troubleshooting
+I1013 10:51:43.102004 8441426496 abstract_checkpointer.py:35] orbax-checkpoint version: 0.6.4
+I1013 10:51:43.102245 8441426496 checkpointer.py:189] [process=0] Started saving checkpoint to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.
+I1013 10:51:43.102806 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:pre.checkpoint_2.1
+I1013 10:51:43.103389 8441426496 atomicity.py:175] Creating tmp directory /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1013 10:51:43.104812 8441426496 checkpoint.py:134] Wrote CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728831103104435000, commit_timestamp_nsecs=None), json={"init_timestamp_nsecs": 1728831103104435000, "commit_timestamp_nsecs": null} to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1013 10:51:43.104967 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:post.checkpoint_2.2
+I1013 10:51:43.121258 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 291.2 MiB/s (total bytes: 4.5 MiB) (time elapsed: 15 milliseconds) (per-host)
+I1013 10:51:43.143177 8441426496 future.py:88] ChainedFuture completed 2/2 futures in 0.02 seconds.
+I1013 10:51:43.143351 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/bytes_per_sec: 120.5 MiB/s (total bytes: 4.5 MiB) (time elapsed: 37 milliseconds) (per-host)
+I1013 10:51:43.143711 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:save.checkpoint_2
+I1013 10:51:43.149131 8441426496 type_handlers.py:562] [process=0][thread=MainThread] Validating params (raw input=144, unique=72) in TensorStore KvStore: KvStore({
+  'base': {
+    'driver': 'file',
+    'path': '/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0/',
+  },
+  'cache_pool': 'cache_pool#ocdbt',
+  'config': {
+    'compression': {'id': 'zstd'},
+    'max_decoded_node_bytes': 100000000,
+    'max_inline_value_bytes': 1024,
+    'uuid': '19de0ff1cc504c1491e050b6b283c34b',
+    'version_tree_arity_log2': 4,
+  },
+  'context': {
+    'cache_pool#ocdbt': {'total_bytes_limit': 100000000},
+    'data_copy_concurrency': {},
+    'file_io_concurrency': {'limit': 128},
+    'file_io_sync': True,
+    'ocdbt_coordinator': {},
+  },
+  'driver': 'ocdbt',
+  'experimental_read_coalescing_interval': '1ms',
+  'experimental_read_coalescing_merged_bytes': 500000000000,
+  'experimental_read_coalescing_threshold_bytes': 1000000,
+}).
+I1013 10:51:43.149627 8441426496 atomicity.py:316] Renaming /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0 to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2
+I1013 10:51:43.149835 8441426496 checkpoint.py:174] Read CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728831103104435000, commit_timestamp_nsecs=None) from /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1013 10:51:43.150092 8441426496 checkpoint.py:191] Updated CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728831103104435000, commit_timestamp_nsecs=1728831103149699000) to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1013 10:51:43.150315 8441426496 atomicity.py:518] [process=0][thread=MainThread] Finished saving checkpoint (finalized tmp dir) to `/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2`.
+I1013 10:51:43.150371 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:finalize.checkpoint_2
+[]
+[]

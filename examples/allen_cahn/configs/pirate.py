@@ -12,7 +12,7 @@ def get_config():
     # Weights & Biases
     config.wandb = wandb = ml_collections.ConfigDict()
     wandb.project = "PINN-AllenCahn"
-    wandb.name = "pirate"
+    wandb.name = "pirate1"
     wandb.tag = None
 
     # Physics-informed initialization
@@ -51,7 +51,7 @@ def get_config():
 
     # Training
     config.training = training = ml_collections.ConfigDict()
-    training.max_steps = 300000
+    training.max_steps = 10000
     training.batch_size_per_device = 8192
 
     # Weighting

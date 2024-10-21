@@ -1,3 +1,4 @@
+import jax 
 from functools import partial
 from typing import Any, Callable, Sequence, Tuple, Optional, Dict
 
@@ -9,6 +10,7 @@ from jax import lax, jit, grad, pmap, random, tree_map, jacfwd, jacrev
 from jax.tree_util import tree_map, tree_reduce, tree_leaves
 
 import optax
+from jaxpi.soap import soap
 
 from jaxpi import archs
 from jaxpi.utils import flatten_pytree
@@ -87,7 +89,17 @@ def _create_optimizer(config):
         tx = optax.adam(
             learning_rate=lr, b1=config.beta1, b2=config.beta2, eps=config.eps
         )
-
+    elif config.optimizer == "SOAP":
+        tx = soap(
+            learning_rate=config.learning_rate,
+            b1=config.beta1,
+            b2=config.beta2,
+            eps=config.eps,
+            weight_decay=config.weight_decay,
+            precondition_frequency=config.precondition_frequency,
+            max_precond_dim=config.max_precond_dim,
+            # precision=config.precision
+        )
     else:
         raise NotImplementedError(f"Optimizer {config.optimizer} not supported yet!")
 

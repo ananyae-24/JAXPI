@@ -1,0 +1,18 @@
+[10:55:35 - main - INFO] Waiting for JIT...
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 50, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 35, in main
+    model=train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/train.py", line 108, in train_and_evaluate
+    evaluator.Store_layer_directions(state,batch)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/models.py", line 149, in Store_layer_directions
+    self.layer_grad_directions[layer_grad_directions]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not dict

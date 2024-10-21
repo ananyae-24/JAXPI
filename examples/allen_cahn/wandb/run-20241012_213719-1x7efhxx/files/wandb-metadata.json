@@ -1,0 +1,40 @@
+{
+  "os": "macOS-15.0-arm64-arm-64bit",
+  "python": "3.11.5",
+  "startedAt": "2024-10-13T01:37:19.908306Z",
+  "args": [
+    "--config=configs/default.py"
+  ],
+  "program": "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py",
+  "codePath": "examples/allen_cahn/main.py",
+  "git": {
+    "remote": "https://github.com/PredictiveIntelligenceLab/jaxpi.git",
+    "commit": "434c9cdbb7a7a3bb103a621b97e0cce43ea67236"
+  },
+  "email": "ananyae@seas.upenn.edu",
+  "root": "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn",
+  "host": "Ananyaes-MacBook-Pro.local",
+  "username": "ananyaebhartari",
+  "executable": "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/bin/python",
+  "codePathLocal": "main.py",
+  "cpu_count": 10,
+  "cpu_count_logical": 10,
+  "disk": {
+    "/": {
+      "total": "494384795648",
+      "used": "144817655808"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 10
+  },
+  "gpuapple": {
+    "gpuType": "Apple M2 Pro",
+    "vendor": "sppci_vendor_Apple",
+    "cores": 16
+  }
+}

@@ -1,0 +1,18 @@
+{"time":"2024-10-13T14:08:38.60439-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T14:08:38.604437-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_140838-xv2vivzn/logs/debug-core.log"}
+{"time":"2024-10-13T14:08:38.604575-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T14:08:38.604585-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_140838-xv2vivzn/logs/debug-core.log"}
+{"time":"2024-10-13T14:08:38.613504-04:00","level":"INFO","msg":"created new stream","id":"xv2vivzn"}
+{"time":"2024-10-13T14:08:38.613572-04:00","level":"INFO","msg":"stream: started","id":"xv2vivzn"}
+{"time":"2024-10-13T14:08:38.613644-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"xv2vivzn"}}
+{"time":"2024-10-13T14:08:38.613738-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xv2vivzn"}}
+{"time":"2024-10-13T14:08:38.613766-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"xv2vivzn"}}
+{"time":"2024-10-13T14:08:38.852275-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-13T14:08:38.855053-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-13T14:29:19.352438-04:00","level":"INFO","msg":"stream: closing","id":"xv2vivzn"}
+{"time":"2024-10-13T14:29:19.35247-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-13T14:29:19.352607-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-13T14:29:19.96331-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"xv2vivzn"}}
+{"time":"2024-10-13T14:29:19.96334-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"xv2vivzn"}}
+{"time":"2024-10-13T14:29:19.963348-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"xv2vivzn"}}
+{"time":"2024-10-13T14:29:19.963549-04:00","level":"INFO","msg":"stream: closed","id":"xv2vivzn"}

@@ -1,0 +1,74 @@
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 40, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 32, in main
+    train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/train.py", line 90, in train_and_evaluate
+    model = models.AllenCahn(config, u0, t_star, x_star)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/models.py", line 17, in __init__
+    super().__init__(config)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/models.py", line 203, in __init__
+    super().__init__(config)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/models.py", line 129, in __init__
+    self.state = _create_train_state(config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/models.py", line 110, in _create_train_state
+    params = arch.init(random.PRNGKey(config.seed), x)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/archs.py", line 405, in __call__
+    u = Dense(features=self.hidden_dim, reparam=self.reparam)(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/archs.py", line 125, in __call__
+    g, v = self.param(
+           ^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/archs.py", line 34, in init
+    w = init_fn(key1, shape)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jax/_src/nn/initializers.py", line 335, in init
+    return random.truncated_normal(key, -2, 2, shape, dtype) * stddev
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jax/_src/random.py", line 847, in truncated_normal
+    return _truncated_normal(key, lower, upper, shape, dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jaxlib.xla_extension.XlaRuntimeError: UNKNOWN: /Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/archs.py:34:12: error: failed to legalize operation 'mhlo.erf'
+        w = init_fn(key1, shape)
+           ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/flax/core/scope.py:997:14: note: called from
+      value = init_fn(self.make_rng('params'), *init_args, **init_kwargs)
+             ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/flax/linen/module.py:1867:8: note: called from
+    v = self.scope.param(name, init_fn, *init_args, unbox=unbox, **init_kwargs)
+       ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/archs.py:125:19: note: called from
+            g, v = self.param(
+                  ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/flax/linen/module.py:1211:14: note: called from
+          y = run_fun(self, *args, **kwargs)
+             ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/flax/linen/module.py:694:13: note: called from
+      return self._call_wrapped_method(fun, args, kwargs)
+            ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/archs.py:405:12: note: called from
+        u = Dense(features=self.hidden_dim, reparam=self.reparam)(x)
+           ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/flax/linen/module.py:1211:14: note: called from
+          y = run_fun(self, *args, **kwargs)
+             ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/flax/linen/module.py:694:13: note: called from
+      return self._call_wrapped_method(fun, args, kwargs)
+            ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/flax/linen/module.py:3081:13: note: called from
+      return fn(module.clone(parent=scope, _deep_clone=True), *args, **kwargs)
+            ^
+/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv/lib/python3.11/site-packages/jaxpi/archs.py:34:12: note: see current operation: %109 = "mhlo.erf"(%108) : (tensor<f32>) -> tensor<f32>
+        w = init_fn(key1, shape)
+           ^
+
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

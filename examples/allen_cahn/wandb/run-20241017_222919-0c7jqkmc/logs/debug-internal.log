@@ -1,0 +1,11 @@
+{"time":"2024-10-17T22:29:19.472571-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-17T22:29:19.472605-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241017_222919-0c7jqkmc/logs/debug-core.log"}
+{"time":"2024-10-17T22:29:19.47268-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-17T22:29:19.472686-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241017_222919-0c7jqkmc/logs/debug-core.log"}
+{"time":"2024-10-17T22:29:19.480477-04:00","level":"INFO","msg":"created new stream","id":"0c7jqkmc"}
+{"time":"2024-10-17T22:29:19.480509-04:00","level":"INFO","msg":"stream: started","id":"0c7jqkmc"}
+{"time":"2024-10-17T22:29:19.480536-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"0c7jqkmc"}}
+{"time":"2024-10-17T22:29:19.480531-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"0c7jqkmc"}}
+{"time":"2024-10-17T22:29:19.480593-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"0c7jqkmc"}}
+{"time":"2024-10-17T22:29:27.620522-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-17T22:29:27.621778-04:00","level":"INFO","msg":"Starting system monitor"}

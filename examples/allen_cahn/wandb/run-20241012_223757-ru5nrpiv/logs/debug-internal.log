@@ -1,0 +1,18 @@
+{"time":"2024-10-12T22:37:57.318689-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:37:57.318729-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_223757-ru5nrpiv/logs/debug-core.log"}
+{"time":"2024-10-12T22:37:57.318848-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:37:57.318856-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_223757-ru5nrpiv/logs/debug-core.log"}
+{"time":"2024-10-12T22:37:57.324285-04:00","level":"INFO","msg":"created new stream","id":"ru5nrpiv"}
+{"time":"2024-10-12T22:37:57.324339-04:00","level":"INFO","msg":"stream: started","id":"ru5nrpiv"}
+{"time":"2024-10-12T22:37:57.324363-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ru5nrpiv"}}
+{"time":"2024-10-12T22:37:57.324378-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"ru5nrpiv"}}
+{"time":"2024-10-12T22:37:57.324379-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ru5nrpiv"}}
+{"time":"2024-10-12T22:37:57.540099-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-12T22:37:57.541215-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-12T22:38:08.263376-04:00","level":"INFO","msg":"stream: closing","id":"ru5nrpiv"}
+{"time":"2024-10-12T22:38:08.26341-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-12T22:38:08.263442-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-12T22:38:08.982443-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ru5nrpiv"}}
+{"time":"2024-10-12T22:38:08.982465-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ru5nrpiv"}}
+{"time":"2024-10-12T22:38:08.982483-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"ru5nrpiv"}}
+{"time":"2024-10-12T22:38:08.982675-04:00","level":"INFO","msg":"stream: closed","id":"ru5nrpiv"}

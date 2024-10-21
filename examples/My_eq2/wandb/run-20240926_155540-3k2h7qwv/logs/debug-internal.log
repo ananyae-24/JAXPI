@@ -1,0 +1,20 @@
+{"time":"2024-09-26T15:55:40.134663-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-26T15:55:40.134712-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/wandb/run-20240926_155540-3k2h7qwv/logs/debug-core.log"}
+{"time":"2024-09-26T15:55:40.134845-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-26T15:55:40.134856-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/wandb/run-20240926_155540-3k2h7qwv/logs/debug-core.log"}
+{"time":"2024-09-26T15:55:40.142577-04:00","level":"INFO","msg":"created new stream","id":"3k2h7qwv"}
+{"time":"2024-09-26T15:55:40.142652-04:00","level":"INFO","msg":"stream: started","id":"3k2h7qwv"}
+{"time":"2024-09-26T15:55:40.142684-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3k2h7qwv"}}
+{"time":"2024-09-26T15:55:40.142728-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3k2h7qwv"}}
+{"time":"2024-09-26T15:55:40.142911-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"3k2h7qwv"}}
+{"time":"2024-09-26T15:55:41.429715-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-26T15:55:41.43133-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-26T16:58:13.463959-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-09-26T16:58:58.592448-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-09-26T17:32:54.959575-04:00","level":"INFO","msg":"stream: closing","id":"3k2h7qwv"}
+{"time":"2024-09-26T17:32:54.959609-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-26T17:32:54.959639-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-26T17:32:57.826782-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"3k2h7qwv"}}
+{"time":"2024-09-26T17:32:57.826764-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"3k2h7qwv"}}
+{"time":"2024-09-26T17:32:57.826723-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"3k2h7qwv"}}
+{"time":"2024-09-26T17:32:57.827329-04:00","level":"INFO","msg":"stream: closed","id":"3k2h7qwv"}

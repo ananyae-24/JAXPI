@@ -1,0 +1,18 @@
+{"time":"2024-10-12T22:09:26.717506-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:09:26.717542-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_220926-6ahauhvi/logs/debug-core.log"}
+{"time":"2024-10-12T22:09:26.717672-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:09:26.71768-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_220926-6ahauhvi/logs/debug-core.log"}
+{"time":"2024-10-12T22:09:26.722444-04:00","level":"INFO","msg":"created new stream","id":"6ahauhvi"}
+{"time":"2024-10-12T22:09:26.722488-04:00","level":"INFO","msg":"stream: started","id":"6ahauhvi"}
+{"time":"2024-10-12T22:09:26.722501-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6ahauhvi"}}
+{"time":"2024-10-12T22:09:26.722547-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"6ahauhvi"}}
+{"time":"2024-10-12T22:09:26.722517-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6ahauhvi"}}
+{"time":"2024-10-12T22:09:27.008719-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-12T22:09:27.009863-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-12T22:09:28.277077-04:00","level":"INFO","msg":"stream: closing","id":"6ahauhvi"}
+{"time":"2024-10-12T22:09:28.277101-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-12T22:09:28.277159-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-12T22:09:28.849617-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"6ahauhvi"}}
+{"time":"2024-10-12T22:09:28.849639-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"6ahauhvi"}}
+{"time":"2024-10-12T22:09:28.849653-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"6ahauhvi"}}
+{"time":"2024-10-12T22:09:28.850227-04:00","level":"INFO","msg":"stream: closed","id":"6ahauhvi"}

@@ -1,0 +1,18 @@
+{"time":"2024-09-24T23:13:24.704722-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-24T23:13:24.704761-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/heat/wandb/run-20240924_231324-lpp942hh/logs/debug-core.log"}
+{"time":"2024-09-24T23:13:24.704821-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-24T23:13:24.704826-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/heat/wandb/run-20240924_231324-lpp942hh/logs/debug-core.log"}
+{"time":"2024-09-24T23:13:24.716027-04:00","level":"INFO","msg":"created new stream","id":"lpp942hh"}
+{"time":"2024-09-24T23:13:24.716072-04:00","level":"INFO","msg":"stream: started","id":"lpp942hh"}
+{"time":"2024-09-24T23:13:24.716104-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"lpp942hh"}}
+{"time":"2024-09-24T23:13:24.716155-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"lpp942hh"}}
+{"time":"2024-09-24T23:13:24.716247-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"lpp942hh"}}
+{"time":"2024-09-24T23:13:25.07225-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-24T23:13:25.072967-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-24T23:40:18.603461-04:00","level":"INFO","msg":"stream: closing","id":"lpp942hh"}
+{"time":"2024-09-24T23:40:18.603503-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-24T23:40:18.603618-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-24T23:40:20.184191-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"lpp942hh"}}
+{"time":"2024-09-24T23:40:20.18422-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"lpp942hh"}}
+{"time":"2024-09-24T23:40:20.184228-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"lpp942hh"}}
+{"time":"2024-09-24T23:40:20.184385-04:00","level":"INFO","msg":"stream: closed","id":"lpp942hh"}

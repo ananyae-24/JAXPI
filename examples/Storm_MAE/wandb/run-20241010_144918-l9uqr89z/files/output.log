@@ -1,0 +1,29 @@
+[14:49:18 - main - INFO] Use physics-informed initialization...
+least square residuals:  [3.1062832e+03 3.1080930e+03 2.2121274e-01]
+[14:49:20 - main - INFO] Waiting for JIT...
+[14:49:23 - main - INFO] --------------------------
+[14:49:23 - main - INFO] Iter:   0    Time: 2.853
+[14:49:23 - main - INFO] -----------  -------------
+[14:49:23 - main - INFO] ics_loss     3.416e-02
+[14:49:23 - main - INFO] res_loss     1.452e-01
+[14:49:23 - main - INFO] l2_error     3.521e-01
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/Storm/main.py", line 40, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/Storm/main.py", line 32, in main
+    train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/Storm/train.py", line 112, in train_and_evaluate
+    batch = next(res_sampler)
+            ^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jaxpi/samplers.py", line 20, in __getitem__
+    batch = self.data_generation(keys)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/jax/_src/api.py", line 1831, in <lambda>
+    lambda x, s: pxla.shard_args([s], [None], [x])[0],
+
+KeyboardInterrupt

@@ -7,7 +7,7 @@ try:
     README = open(os.path.join(_CURRENT_DIR, "README.md"), encoding="utf-8").read()
 except IOError:
     README = ""
-
+print(find_packages())
 setup(
     name="jaxpi",
     version="0.0.2",
@@ -26,6 +26,7 @@ setup(
         "optax",
         "scipy",
         "wandb",
+        "jaxtyping",
     ],
     extras_require={
         "testing": ["pytest"],

@@ -1,0 +1,21 @@
+{"time":"2024-10-04T21:15:34.588018-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-04T21:15:34.588078-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq4/wandb/run-20241004_211534-kekaqi09/logs/debug-core.log"}
+{"time":"2024-10-04T21:15:34.588236-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-04T21:15:34.588247-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq4/wandb/run-20241004_211534-kekaqi09/logs/debug-core.log"}
+{"time":"2024-10-04T21:15:34.596827-04:00","level":"INFO","msg":"created new stream","id":"kekaqi09"}
+{"time":"2024-10-04T21:15:34.596876-04:00","level":"INFO","msg":"stream: started","id":"kekaqi09"}
+{"time":"2024-10-04T21:15:34.596939-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"kekaqi09"}}
+{"time":"2024-10-04T21:15:34.597125-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"kekaqi09"}}
+{"time":"2024-10-04T21:15:34.597143-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"kekaqi09"}}
+{"time":"2024-10-04T21:15:34.824468-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-04T21:15:34.827331-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-05T01:16:54.244796-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-05T01:16:56.743627-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-05T01:16:57.560901-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-05T02:12:22.372996-04:00","level":"INFO","msg":"stream: closing","id":"kekaqi09"}
+{"time":"2024-10-05T02:12:22.373136-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-05T02:12:22.373176-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-05T02:12:23.937683-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"kekaqi09"}}
+{"time":"2024-10-05T02:12:23.937767-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"kekaqi09"}}
+{"time":"2024-10-05T02:12:23.938743-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"kekaqi09"}}
+{"time":"2024-10-05T02:12:23.938805-04:00","level":"INFO","msg":"stream: closed","id":"kekaqi09"}

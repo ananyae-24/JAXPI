@@ -1,0 +1,21 @@
+[19:26:19 - main - INFO] Use physics-informed initialization...
+least square residuals:  [0.5449066]
+[19:26:20 - main - INFO] Waiting for JIT...
+[19:26:50 - main - INFO] ---------------------------
+[19:26:50 - main - INFO] Iter:   0    Time: 29.994
+[19:26:50 - main - INFO] -----------  --------------
+[19:26:50 - main - INFO] ics_loss     6.045e-05
+[19:26:50 - main - INFO] res_loss     4.583e-02
+[19:26:50 - main - INFO] l2_error     6.694e-01
+[19:28:05 - main - INFO] --------------------------
+[19:28:05 - main - INFO] Iter: 100    Time: 2.048
+[19:28:05 - main - INFO] -----------  -------------
+[19:28:05 - main - INFO] ics_loss     nan
+[19:28:05 - main - INFO] res_loss     nan
+[19:28:05 - main - INFO] l2_error     nan
+[19:29:15 - main - INFO] --------------------------
+[19:29:15 - main - INFO] Iter: 200    Time: 2.045
+[19:29:15 - main - INFO] -----------  -------------
+[19:29:15 - main - INFO] ics_loss     nan
+[19:29:15 - main - INFO] res_loss     nan
+[19:29:15 - main - INFO] l2_error     nan

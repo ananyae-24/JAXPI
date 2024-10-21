@@ -1,0 +1,21 @@
+{"time":"2024-09-29T15:30:33.48614-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-29T15:30:33.486197-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/wandb/run-20240929_153033-3pl6prsm/logs/debug-core.log"}
+{"time":"2024-09-29T15:30:33.486297-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-09-29T15:30:33.486306-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/wandb/run-20240929_153033-3pl6prsm/logs/debug-core.log"}
+{"time":"2024-09-29T15:30:33.495254-04:00","level":"INFO","msg":"created new stream","id":"3pl6prsm"}
+{"time":"2024-09-29T15:30:33.495299-04:00","level":"INFO","msg":"stream: started","id":"3pl6prsm"}
+{"time":"2024-09-29T15:30:33.495305-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3pl6prsm"}}
+{"time":"2024-09-29T15:30:33.495366-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"3pl6prsm"}}
+{"time":"2024-09-29T15:30:33.495363-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3pl6prsm"}}
+{"time":"2024-09-29T15:30:33.747408-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-29T15:30:33.749893-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-29T17:33:30.655047-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-09-29T17:33:52.498338-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-09-29T17:34:09.404809-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-09-29T17:55:55.967921-04:00","level":"INFO","msg":"stream: closing","id":"3pl6prsm"}
+{"time":"2024-09-29T17:55:55.967951-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-29T17:55:55.96807-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-29T17:55:56.842816-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"3pl6prsm"}}
+{"time":"2024-09-29T17:55:56.842849-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"3pl6prsm"}}
+{"time":"2024-09-29T17:55:56.84289-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"3pl6prsm"}}
+{"time":"2024-09-29T17:55:56.843324-04:00","level":"INFO","msg":"stream: closed","id":"3pl6prsm"}

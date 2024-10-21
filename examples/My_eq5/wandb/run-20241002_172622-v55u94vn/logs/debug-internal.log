@@ -1,0 +1,20 @@
+{"time":"2024-10-02T17:26:22.09942-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-02T17:26:22.099444-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq2/wandb/run-20241002_172622-v55u94vn/logs/debug-core.log"}
+{"time":"2024-10-02T17:26:22.099712-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-02T17:26:22.099726-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq2/wandb/run-20241002_172622-v55u94vn/logs/debug-core.log"}
+{"time":"2024-10-02T17:26:22.114001-04:00","level":"INFO","msg":"created new stream","id":"v55u94vn"}
+{"time":"2024-10-02T17:26:22.11407-04:00","level":"INFO","msg":"stream: started","id":"v55u94vn"}
+{"time":"2024-10-02T17:26:22.114124-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"v55u94vn"}}
+{"time":"2024-10-02T17:26:22.114262-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"v55u94vn"}}
+{"time":"2024-10-02T17:26:22.114264-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"v55u94vn"}}
+{"time":"2024-10-02T17:26:22.36815-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-02T17:26:22.369189-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-02T19:02:10.024729-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-02T20:30:16.988112-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/ananyae-university-of-pennsylvania/PINN-Inverse/v55u94vn/file_stream"}
+{"time":"2024-10-02T21:47:13.68474-04:00","level":"INFO","msg":"stream: closing","id":"v55u94vn"}
+{"time":"2024-10-02T21:47:13.684796-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-02T21:47:13.684891-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-02T21:47:15.42199-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"v55u94vn"}}
+{"time":"2024-10-02T21:47:15.422053-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"v55u94vn"}}
+{"time":"2024-10-02T21:47:15.422028-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"v55u94vn"}}
+{"time":"2024-10-02T21:47:15.422185-04:00","level":"INFO","msg":"stream: closed","id":"v55u94vn"}

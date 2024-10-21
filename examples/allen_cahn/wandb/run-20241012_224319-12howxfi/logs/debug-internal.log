@@ -1,0 +1,18 @@
+{"time":"2024-10-12T22:43:19.085709-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:43:19.085763-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_224319-12howxfi/logs/debug-core.log"}
+{"time":"2024-10-12T22:43:19.085898-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T22:43:19.085909-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_224319-12howxfi/logs/debug-core.log"}
+{"time":"2024-10-12T22:43:19.092996-04:00","level":"INFO","msg":"created new stream","id":"12howxfi"}
+{"time":"2024-10-12T22:43:19.093052-04:00","level":"INFO","msg":"stream: started","id":"12howxfi"}
+{"time":"2024-10-12T22:43:19.093078-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"12howxfi"}}
+{"time":"2024-10-12T22:43:19.093092-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"12howxfi"}}
+{"time":"2024-10-12T22:43:19.093118-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"12howxfi"}}
+{"time":"2024-10-12T22:43:19.301821-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-12T22:43:19.304238-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-12T22:43:29.68409-04:00","level":"INFO","msg":"stream: closing","id":"12howxfi"}
+{"time":"2024-10-12T22:43:29.684113-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-12T22:43:29.684299-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-12T22:43:30.388825-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"12howxfi"}}
+{"time":"2024-10-12T22:43:30.38885-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"12howxfi"}}
+{"time":"2024-10-12T22:43:30.388842-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"12howxfi"}}
+{"time":"2024-10-12T22:43:30.389141-04:00","level":"INFO","msg":"stream: closed","id":"12howxfi"}

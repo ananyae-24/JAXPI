@@ -1,0 +1,21 @@
+{"time":"2024-10-13T14:41:43.768305-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T14:41:43.768371-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_144143-kc8323tn/logs/debug-core.log"}
+{"time":"2024-10-13T14:41:43.76853-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-13T14:41:43.76854-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241013_144143-kc8323tn/logs/debug-core.log"}
+{"time":"2024-10-13T14:41:43.778356-04:00","level":"INFO","msg":"created new stream","id":"kc8323tn"}
+{"time":"2024-10-13T14:41:43.778438-04:00","level":"INFO","msg":"stream: started","id":"kc8323tn"}
+{"time":"2024-10-13T14:41:43.778445-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"kc8323tn"}}
+{"time":"2024-10-13T14:41:43.778518-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"kc8323tn"}}
+{"time":"2024-10-13T14:41:43.778755-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"kc8323tn"}}
+{"time":"2024-10-13T14:41:43.993699-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-13T14:41:43.995914-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-13T15:54:29.46329-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-13T15:58:14.479012-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-13T16:19:14.488475-04:00","level":"INFO","msg":"api: retrying HTTP request, no error or response"}
+{"time":"2024-10-13T16:30:31.576796-04:00","level":"INFO","msg":"stream: closing","id":"kc8323tn"}
+{"time":"2024-10-13T16:30:31.576818-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-13T16:30:31.576837-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-13T16:30:33.466823-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"kc8323tn"}}
+{"time":"2024-10-13T16:30:33.466841-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"kc8323tn"}}
+{"time":"2024-10-13T16:30:33.46705-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"kc8323tn"}}
+{"time":"2024-10-13T16:30:33.467081-04:00","level":"INFO","msg":"stream: closed","id":"kc8323tn"}

@@ -1,0 +1,13 @@
+{"time":"2024-09-26T15:44:02.683565-04:00","level":"INFO","msg":"started logging, with flags","port-filename":"/var/folders/4b/h8vgvfd11sn6hdtbnbqt9xk00000gn/T/tmpg0j9x1h5/port-40009.txt","pid":40009,"debug":false,"disable-analytics":false}
+{"time":"2024-09-26T15:44:02.683683-04:00","level":"INFO","msg":"FeatureState","shutdownOnParentExitEnabled":false}
+{"time":"2024-09-26T15:44:02.68943-04:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":40009}
+{"time":"2024-09-26T15:44:02.689431-04:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":55531,"Zone":""}}
+{"time":"2024-09-26T15:44:02.883852-04:00","level":"INFO","msg":"created new connection","id":"127.0.0.1:55532"}
+{"time":"2024-09-26T15:44:03.100075-04:00","level":"INFO","msg":"connection init received","streamId":"k5t4kx2y","id":"127.0.0.1:55532"}
+{"time":"2024-09-26T15:44:03.100567-04:00","level":"ERROR","msg":"error creating symlink","error":"symlink /Users/ananyaebhartari/Library/Caches/wandb/logs/core-debug-20240926_154402.log /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/My_eq/wandb/run-20240926_154403-k5t4kx2y/logs/debug-core.log: file exists"}
+{"time":"2024-09-26T15:44:03.105491-04:00","level":"INFO","msg":"connection init completed","streamId":"k5t4kx2y","id":"127.0.0.1:55532"}
+{"time":"2024-09-26T15:44:05.013531-04:00","level":"INFO","msg":"connection: teardown","id":"127.0.0.1:55532"}
+{"time":"2024-09-26T15:44:05.014014-04:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2024-09-26T15:44:05.014291-04:00","level":"INFO","msg":"closed connection","id":"127.0.0.1:55532"}
+{"time":"2024-09-26T15:44:05.62171-04:00","level":"INFO","msg":"connection closed","id":"127.0.0.1:55532"}
+{"time":"2024-09-26T15:44:05.621751-04:00","level":"INFO","msg":"server is closed"}

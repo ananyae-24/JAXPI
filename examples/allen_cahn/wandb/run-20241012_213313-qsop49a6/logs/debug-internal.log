@@ -1,0 +1,18 @@
+{"time":"2024-10-12T21:33:13.926301-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T21:33:13.926359-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_213313-qsop49a6/logs/debug-core.log"}
+{"time":"2024-10-12T21:33:13.926509-04:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-12T21:33:13.92652-04:00","level":"INFO","msg":"created symlink","path":"/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/wandb/run-20241012_213313-qsop49a6/logs/debug-core.log"}
+{"time":"2024-10-12T21:33:13.933183-04:00","level":"INFO","msg":"created new stream","id":"qsop49a6"}
+{"time":"2024-10-12T21:33:13.933235-04:00","level":"INFO","msg":"stream: started","id":"qsop49a6"}
+{"time":"2024-10-12T21:33:13.933268-04:00","level":"INFO","msg":"sender: started","stream_id":{"value":"qsop49a6"}}
+{"time":"2024-10-12T21:33:13.933255-04:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"qsop49a6"}}
+{"time":"2024-10-12T21:33:13.933343-04:00","level":"INFO","msg":"handler: started","stream_id":{"value":"qsop49a6"}}
+{"time":"2024-10-12T21:33:14.178032-04:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-12T21:33:14.178941-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-12T21:33:23.906776-04:00","level":"INFO","msg":"stream: closing","id":"qsop49a6"}
+{"time":"2024-10-12T21:33:23.906799-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-12T21:33:23.906921-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-12T21:33:24.546969-04:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"qsop49a6"}}
+{"time":"2024-10-12T21:33:24.546983-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"qsop49a6"}}
+{"time":"2024-10-12T21:33:24.546989-04:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"qsop49a6"}}
+{"time":"2024-10-12T21:33:24.547235-04:00","level":"INFO","msg":"stream: closed","id":"qsop49a6"}

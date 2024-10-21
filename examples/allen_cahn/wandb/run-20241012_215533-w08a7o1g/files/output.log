@@ -1,0 +1,77 @@
+[21:55:34 - main - INFO] Waiting for JIT...
+[21:55:45 - main - INFO] ---------------------------
+[21:55:45 - main - INFO] Iter:   0    Time: 11.104
+[21:55:45 - main - INFO] -----------  --------------
+[21:55:45 - main - INFO] ics_loss     1.757e+00
+[21:55:45 - main - INFO] res_loss     9.885e+01
+[21:55:45 - main - INFO] l2_error     1.544e+00
+I1012 21:55:48.034341 8441426496 checkpoints.py:570] Saving checkpoint at step: 2
+I1012 21:55:48.034950 8441426496 checkpoints.py:658] Using Orbax as backend to save Flax checkpoints. For potential troubleshooting see: https://flax.readthedocs.io/en/latest/guides/training_techniques/use_checkpointing.html#orbax-as-backend-troubleshooting
+I1012 21:55:48.035070 8441426496 abstract_checkpointer.py:35] orbax-checkpoint version: 0.6.4
+I1012 21:55:48.035266 8441426496 checkpointer.py:189] [process=0] Started saving checkpoint to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.
+I1012 21:55:48.035917 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:pre.checkpoint_2.1
+I1012 21:55:48.036332 8441426496 atomicity.py:175] Creating tmp directory /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1012 21:55:48.037111 8441426496 checkpoint.py:134] Wrote CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728784548036785000, commit_timestamp_nsecs=None), json={"init_timestamp_nsecs": 1728784548036785000, "commit_timestamp_nsecs": null} to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1012 21:55:48.037256 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: create_tmp_directory:post.checkpoint_2.2
+I1012 21:55:48.045338 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 1.2 GiB/s (total bytes: 9.1 MiB) (time elapsed: 7 milliseconds) (per-host)
+I1012 21:55:48.065629 8441426496 future.py:88] ChainedFuture completed 2/2 futures in 0.02 seconds.
+I1012 21:55:48.065771 8441426496 base_pytree_checkpoint_handler.py:108] [process=0] /jax/checkpoint/write/bytes_per_sec: 325.3 MiB/s (total bytes: 9.1 MiB) (time elapsed: 27 milliseconds) (per-host)
+I1012 21:55:48.065994 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:save.checkpoint_2
+I1012 21:55:48.070518 8441426496 type_handlers.py:562] [process=0][thread=MainThread] Validating params (raw input=144, unique=72) in TensorStore KvStore: KvStore({
+  'base': {
+    'driver': 'file',
+    'path': '/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0/',
+  },
+  'cache_pool': 'cache_pool#ocdbt',
+  'config': {
+    'compression': {'id': 'zstd'},
+    'max_decoded_node_bytes': 100000000,
+    'max_inline_value_bytes': 1024,
+    'uuid': 'f0c3ab5906279bd5460809e7a1f56224',
+    'version_tree_arity_log2': 4,
+  },
+  'context': {
+    'cache_pool#ocdbt': {'total_bytes_limit': 100000000},
+    'data_copy_concurrency': {},
+    'file_io_concurrency': {'limit': 128},
+    'file_io_sync': True,
+    'ocdbt_coordinator': {},
+  },
+  'driver': 'ocdbt',
+  'experimental_read_coalescing_interval': '1ms',
+  'experimental_read_coalescing_merged_bytes': 500000000000,
+  'experimental_read_coalescing_threshold_bytes': 1000000,
+}).
+I1012 21:55:48.070871 8441426496 atomicity.py:316] Renaming /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0 to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2
+I1012 21:55:48.071039 8441426496 checkpoint.py:174] Read CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728784548036785000, commit_timestamp_nsecs=None) from /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1012 21:55:48.071254 8441426496 checkpoint.py:191] Updated CheckpointMetadata=CheckpointMetadata(init_timestamp_nsecs=1728784548036785000, commit_timestamp_nsecs=1728784548070923000) to /Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2.orbax-checkpoint-tmp-0
+I1012 21:55:48.071472 8441426496 atomicity.py:518] [process=0][thread=MainThread] Finished saving checkpoint (finalized tmp dir) to `/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/default/ckpt/checkpoint_2`.
+I1012 21:55:48.071511 8441426496 utils.py:240] [process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:finalize.checkpoint_2
+[{'Dense_0': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_1': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_2': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_3': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_4': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_5': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_6': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>}, {'Dense_0': Array(0.70505933, dtype=float64), 'Dense_1': Array(0.73094367, dtype=float64), 'Dense_2': Array(0.43192569, dtype=float64), 'Dense_3': Array(0.51659553, dtype=float64), 'Dense_4': Array(0.56686969, dtype=float64), 'Dense_5': Array(0.6744749, dtype=float64), 'Dense_6': Array(0.76817136, dtype=float64)}, {'Dense_0': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_1': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_2': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_3': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_4': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_5': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_6': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>}]
+[{'Dense_0': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_1': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_2': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_3': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_4': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_5': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_6': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>}, {'Dense_0': array(0.70505933), 'Dense_1': array(0.73094367), 'Dense_2': array(0.43192569), 'Dense_3': array(0.51659553), 'Dense_4': array(0.56686969), 'Dense_5': array(0.6744749), 'Dense_6': array(0.76817136)}, {'Dense_0': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_1': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_2': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_3': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_4': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_5': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>, 'Dense_6': Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=3/1)>}]
+Traceback (most recent call last):
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 40, in <module>
+    app.run(main)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/.venv1/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/main.py", line 32, in main
+    train.train_and_evaluate(FLAGS.config, FLAGS.workdir)
+  File "/Users/ananyaebhartari/Documents/Paris/My_pirate/jaxpi/examples/allen_cahn/train.py", line 142, in train_and_evaluate
+    json.dump(serializable_layer_grad_direction, f, indent=4)
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/json/encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/Users/ananyaebhartari/miniconda3/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DynamicJaxprTracer is not JSON serializable
