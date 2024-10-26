@@ -1,6 +1,4 @@
 jaxpi.egg-info/
-jaxpi/soap.py
-temp.txt
 examples/allen_cahn/__pycache__/
 examples/allen_cahn/configs/__pycache__/
 build/

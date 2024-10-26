@@ -5,6 +5,7 @@ from jaxpi import evaluator
 from jaxpi import logging
 from jaxpi import utils
 from jaxpi import soap
+from jaxpi import CONFig
 
 __version__ = "0.0.2"
 __author__ = "Sifan Wang"
