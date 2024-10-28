@@ -28,7 +28,7 @@ with jax.disable_jit():
         wandb_config = config.wandb
         wandb.init(project=wandb_config.project, name=wandb_config.name)
 
-        # Initialize logger
+        # # Initialize logger
         logger = Logger()
 
         # Get dataset

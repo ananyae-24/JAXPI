@@ -24,7 +24,6 @@ class AllenCahn(ForwardIVP):
         # Predictions over a grid
         self.u_pred_fn = vmap(vmap(self.u_net, (None, None, 0)), (None, 0, None))
         self.r_pred_fn = vmap(vmap(self.r_net, (None, None, 0)), (None, 0, None))
-
     def u_net(self, params, t, x):
         z = jnp.stack([t, x])
         _, u = self.state.apply_fn(params, z)
@@ -63,6 +62,30 @@ class AllenCahn(ForwardIVP):
         )
         
         return grads_ics, grads_res
+    @partial(jit, static_argnums=(0,))
+    def ics_loss_fn(self,params,batch):
+            u_pred = vmap(self.u_net, (None, None, 0))(params, self.t0, self.x_star)
+            return jnp.mean((self.u0 - u_pred) ** 2)
+    @partial(jit, static_argnums=(0,))
+    def res_loss_fn(self,params, batch):
+            if self.config.weighting.use_causal:
+                l, w = self.res_and_w(params, batch)
+                return jnp.mean(l * w)
+            else:
+                r_pred = vmap(self.r_net, (None, 0, 0))(params, batch[:, 0], batch[:, 1])
+                return jnp.mean((r_pred) ** 2)
+    
+    def loss_fns(self, params, batch):
+        def ics_loss(params):
+            return self.ics_loss_fn(params, batch)
+
+        def res_loss(params):
+            return self.res_loss_fn(params, batch)
+
+        return {
+            "ics": jit(ics_loss),  # JIT compile the function
+            "res": jit(res_loss)
+        }
     @partial(jit, static_argnums=(0,))
     def losses(self, params, batch):
         # Initial condition loss
