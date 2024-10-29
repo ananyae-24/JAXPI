@@ -12,7 +12,7 @@ def get_config():
     # Weights & Biases
     config.wandb = wandb = ml_collections.ConfigDict()
     wandb.project = "PINN-AllenCahn"
-    wandb.name = "pirate_config"
+    wandb.name = "pirate_soap_config"
     wandb.tag = None
 
     # Physics-informed initialization
@@ -38,15 +38,14 @@ def get_config():
 
     # Optim
     config.optim = optim = ml_collections.ConfigDict()
-    optim.optimizer = "CONFIG"
+    optim.optimizer = "SOAP_CONFIG"
     optim.losses=["ics","res"]
-    # optim.CONFIG=True
     optim.beta1 = 0.95
     optim.beta2 = 0.95
     optim.eps = 1e-8
-    optim.weight_decay=0.00
-    # optim.precondition_frequency=5
-    # optim.max_precond_dim=10000
+    optim.weight_decay=0.01
+    optim.precondition_frequency=5
+    optim.max_precond_dim=10000
     optim.learning_rate = 1e-3
     # optim.decay_rate = 0.9
     # optim.decay_steps = 5000

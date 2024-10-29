@@ -11,7 +11,8 @@ from jax.tree_util import tree_map, tree_reduce, tree_leaves
 
 import optax
 from jaxpi.soap import soap
-from jaxpi.CONFig import custom_optimizer
+from jaxpi.CONFig import CONFig
+from jaxpi.soap_config import soap_config
 from jaxpi import archs
 from jaxpi.utils import flatten_pytree
 from jax import tree_util
@@ -100,15 +101,27 @@ def _create_optimizer(config):
             max_precond_dim=config.max_precond_dim,
             # precision=config.precision
         )
-    # elif config.optimizer == "CONFIG":
-    #     tx = custom_optimizer(
-    #         learning_rate=config.learning_rate,
-    #         beta1=config.beta1,
-    #         beta2=config.beta2,
-    #         eps=config.eps,
-    #         weight_decay=config.weight_decay,
-    #         # precision=config.precision
-    #     )
+    elif config.optimizer == "SOAP_CONFIG":
+        tx = soap_config(
+            learning_rate=config.learning_rate,
+            b1=config.beta1,
+            b2=config.beta2,
+            eps=config.eps,
+            weight_decay=config.weight_decay,
+            precondition_frequency=config.precondition_frequency,
+            max_precond_dim=config.max_precond_dim,
+            losses=config.losses,
+            # precision=config.precision
+        )
+    elif config.optimizer == "CONFIG":
+        tx = CONFig(
+            losses=config.losses,
+            learning_rate=config.learning_rate,
+            beta1=config.beta1,
+            beta2=config.beta2,
+            eps=config.eps,
+            weight_decay=config.weight_decay,
+        )
     else:
         raise NotImplementedError(f"Optimizer {config.optimizer} not supported yet!")
 
@@ -207,18 +220,6 @@ class PINN:
             w = tree_map(lambda x: (mean_ntk / (x + 1e-5 * mean_ntk)), mean_ntk_dict)
 
         return w
-    @partial(jit, static_argnums=(0,))
-    def solve_layer(self,weights,*grads):
-            flat_grads = jnp.stack([g.flatten() for g in grads], axis=0) 
-            norms = jnp.linalg.norm(flat_grads, axis=1, keepdims=True) + 1e-15
-            weights=jnp.vstack(weights)
-            G = flat_grads / norms 
-            G_inv = jnp.linalg.pinv(G)
-            g_c_flat =  G_inv @ weights 
-            g_c_flat/=(jnp.linalg.norm(g_c_flat.flatten())+1e-15)
-            g_final = jnp.dot(flat_grads, g_c_flat).sum()* g_c_flat
-            g_final= g_final.reshape(grads[0].shape)  
-            return g_final
     @partial(pmap, axis_name="batch", static_broadcasted_argnums=(0,))
     def update_weights(self, state, batch, *args):
         weights = self.compute_weights(state.params, batch, *args)
@@ -228,22 +229,16 @@ class PINN:
 
     @partial(pmap, axis_name="batch", static_broadcasted_argnums=(0,))
     def step(self, state, batch, *args):
-        if not self.config.optim.CONFIG:
-            grads = grad(self.loss)(state.params, state.weights, batch, *args)
-            grads = lax.pmean(grads, "batch")
-            state = state.apply_gradients(grads=grads)
+        if self.config.optim.optimizer=="CONFIG" or self.config.optim.optimizer=="SOAP_CONFIG":
+            grad_dict=self.grad_dict(state.params, batch, *args)
+            grad_dict=tree_map(lambda grads: lax.pmean(grads, axis_name='batch'), grad_dict)
+            grad_dict["weights"]=state.weights
+            state = state.apply_gradients(grads=grad_dict)
             return state
-        grad_dict=self.grad_dict(state.params, batch, *args)
-        grad_dict=tree_map(lambda grads: lax.pmean(grads, axis_name='batch'), grad_dict)
-        grad_dict_keys=grad_dict.keys()
-        weights_list = [state.weights[key] for key in grad_dict_keys]
-        updates= tree_util.tree_map(
-            lambda *grads: self.solve_layer(weights_list,*grads),  # Pass weights_list as a fixed argument
-            *[grad_dict[key] for key in grad_dict_keys]  # Unpack gradients
-        )
-        state = state.apply_gradients(grads=updates)
+        grads = grad(self.loss)(state.params, state.weights, batch, *args)
+        grads = lax.pmean(grads, "batch")
+        state = state.apply_gradients(grads=grads)
         return state
-
 
 class ForwardIVP(PINN):
     def __init__(self, config):
