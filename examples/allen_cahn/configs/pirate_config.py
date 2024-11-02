@@ -41,17 +41,17 @@ def get_config():
     optim.optimizer = "CONFIG"
     optim.losses=["ics","res"]
     # optim.CONFIG=True
-    optim.beta1 = 0.95
-    optim.beta2 = 0.95
+    optim.beta1 = 0.9
+    optim.beta2 = 0.999
     optim.eps = 1e-8
     optim.weight_decay=0.00
     # optim.precondition_frequency=5
     # optim.max_precond_dim=10000
     optim.learning_rate = 1e-3
-    # optim.decay_rate = 0.9
-    # optim.decay_steps = 5000
-    # optim.staircase = False
-    # optim.warmup_steps = 5000
+    optim.decay_rate = 0.9
+    optim.decay_steps = 5000
+    optim.staircase = False
+    optim.warmup_steps = 5000
     optim.grad_accum_steps = 0
 
     # Training

@@ -91,6 +91,20 @@ def _create_optimizer(config):
             learning_rate=lr, b1=config.beta1, b2=config.beta2, eps=config.eps
         )
     elif config.optimizer == "SOAP":
+        lr = optax.exponential_decay(
+            init_value=config.learning_rate,
+            transition_steps=config.decay_steps,
+            decay_rate=config.decay_rate,
+            staircase=config.staircase,
+        )
+        if config.warmup_steps > 0:
+            warmup = optax.linear_schedule(
+                init_value=0.0,
+                end_value=config.learning_rate,
+                transition_steps=config.warmup_steps,
+            )
+
+            lr = optax.join_schedules([warmup, lr], [config.warmup_steps])
         tx = soap(
             learning_rate=config.learning_rate,
             b1=config.beta1,
@@ -102,6 +116,20 @@ def _create_optimizer(config):
             # precision=config.precision
         )
     elif config.optimizer == "SOAP_CONFIG":
+        lr = optax.exponential_decay(
+            init_value=config.learning_rate,
+            transition_steps=config.decay_steps,
+            decay_rate=config.decay_rate,
+            staircase=config.staircase,
+        )
+        if config.warmup_steps > 0:
+            warmup = optax.linear_schedule(
+                init_value=0.0,
+                end_value=config.learning_rate,
+                transition_steps=config.warmup_steps,
+            )
+
+            lr = optax.join_schedules([warmup, lr], [config.warmup_steps])
         tx = soap_config(
             learning_rate=config.learning_rate,
             b1=config.beta1,
@@ -114,6 +142,20 @@ def _create_optimizer(config):
             # precision=config.precision
         )
     elif config.optimizer == "CONFIG":
+        lr = optax.exponential_decay(
+            init_value=config.learning_rate,
+            transition_steps=config.decay_steps,
+            decay_rate=config.decay_rate,
+            staircase=config.staircase,
+        )
+        if config.warmup_steps > 0:
+            warmup = optax.linear_schedule(
+                init_value=0.0,
+                end_value=config.learning_rate,
+                transition_steps=config.warmup_steps,
+            )
+
+            lr = optax.join_schedules([warmup, lr], [config.warmup_steps])
         tx = CONFig(
             losses=config.losses,
             learning_rate=config.learning_rate,

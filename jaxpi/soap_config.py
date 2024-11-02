@@ -161,7 +161,7 @@ def scale_by_soap(
         G_inv = jnp.linalg.pinv(G)
         g_c_flat =  G_inv @ weights 
         g_c_flat/=(jnp.linalg.norm(g_c_flat.flatten())+1e-15)
-        g_final = (jnp.dot(flat_grads, g_c_flat)*weights).sum()* g_c_flat
+        g_final = (jnp.dot(flat_grads, g_c_flat)).sum()* g_c_flat
         g_final= g_final.reshape(grads[0].shape)  
         return g_final
     

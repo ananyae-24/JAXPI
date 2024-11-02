@@ -10,15 +10,15 @@ from optax import GradientTransformation, Updates
 from functools import partial
 import jax
 import jax.numpy as jnp
-from jax.tree_util import tree_map
+from jax.tree_util import tree_map,tree_flatten
 from optax import GradientTransformation, Updates
-
+from jax.flatten_util import ravel_pytree
 
 class CONFigState(NamedTuple):
-    mt: dict
-    vt: dict
-    m: dict
-    t: jnp.ndarray
+    mt: dict # First Moment Adam 
+    vt: dict # Second Moment Adam 
+    m: dict # Fisrt Moment for all the losses 
+    t: jnp.ndarray # Time step 
 
 # class CONFig:
 #     def __init__(self,losses=["ics","res"], learning_rate=0.001, beta1=0.9, beta2=0.999, eps=1e-8,weight_decay=0.0):
@@ -102,59 +102,116 @@ class CONFigState(NamedTuple):
 #                 )
 
 def CONFig(losses:List =["ics","res"],learning_rate:optax.ScalarOrSchedule = 3e-3, beta1=0.9, beta2:float=0.999, eps:float=1e-8,weight_decay: float = 0.0)-> GradientTransformation:
-    def solve_layer(weights,*grads):
-        flat_grads = jnp.stack([g.flatten() for g in grads], axis=0) 
-        norms = jnp.linalg.norm(flat_grads, axis=1, keepdims=True) + 1e-15
-        weights=jnp.ones_like(jnp.vstack(weights))
-        weights=weights
-        G = flat_grads / norms 
-        G_inv = jnp.linalg.pinv(G)
-        g_c_flat =  G_inv @ weights 
-        g_c_flat/=(jnp.linalg.norm(g_c_flat.flatten())+1e-15)
-        g_final = (jnp.dot(flat_grads, g_c_flat)*weights).sum()* g_c_flat
-        g_final= g_final.reshape(grads[0].shape)  
+    def solve_layer(weights,*grads): ### Solves for the optimal Direction 
+        flat_grads = jnp.stack([g.flatten() for g in grads], axis=0)  # Flatten the grads and make (#losses, #params)
+        norms = jnp.linalg.norm(flat_grads, axis=1, keepdims=True) + 1e-15 # norm is 1st dimention
+        ones=jnp.ones((len(grads),1)) # Vector of ones 
+        G = flat_grads / norms # normalized flat Grads
+        G_inv = jnp.linalg.pinv(G) # pseudo inverse 
+        g_c_flat =  G_inv @ ones # g_c 
+        g_c_flat/=(jnp.linalg.norm(g_c_flat.flatten())+1e-15) # normalize g_c
+        g_final = (jnp.dot(flat_grads, g_c_flat)).sum()* g_c_flat # use cosine similarity to calculate the lenght
+        g_final= g_final.reshape(grads[0].shape)  # reshape the grads as the original shape 
         return g_final
-    def apply_gradients(params, grad_dict, weights,state): 
-        t_inc=jnp.asarray(optax.safe_int32_increment(state.t))
+    def solve_layer_flatten(weights,grads): ### Solves for the optimal Direction 
+        if len(weights)!=2:
+            flat_grads = grads # Flatten the grads and make (#losses, #params)
+            norms = jnp.linalg.norm(flat_grads, axis=1, keepdims=True) + 1e-15 # norm is 1st dimention
+            ones=jnp.ones((len(weights),1)) # Vector of ones 
+            G = flat_grads / norms # normalized flat Grads
+            G_inv = jnp.linalg.pinv(G) # pseudo inverse 
+            g_c_flat =  G_inv @ ones # g_c 
+            g_c_flat/=(jnp.linalg.norm(g_c_flat.flatten())+1e-15) # normalize g_c
+            g_final = (jnp.dot(flat_grads, g_c_flat)).sum()* g_c_flat # use cosine similarity to calculate the lenght
+            return g_final
+        norm_1=jnp.linalg.norm(grads[0])
+        norm_2=jnp.linalg.norm(grads[1])
+        cos_angle=(grads[0]*grads[1]).sum()/(norm_1*norm_2)
+        or_2=grads[0]-norm_1*cos_angle*(grads[1]/norm_2)
+        or_1=grads[1]-norm_2*cos_angle*(grads[0]/norm_1)
+        or_1,or_2=or_1/jnp.linalg.norm(or_1),or_2/jnp.linalg.norm(or_2)
+        best_direction=(1*or_1+1*or_2)
+        best_direction=best_direction/jnp.linalg.norm(best_direction)
+        cos_1=jnp.dot(grads[0],best_direction)
+        cos_2=jnp.dot(grads[1],best_direction)
+        best_direction*=cos_1+cos_2
+        return best_direction
+    def apply_gradients(grad_dict, weights, state): 
+        t_inc=jnp.asarray(optax.safe_int32_increment(state.t)) # Increase the count
         state._replace(t=t_inc)    
         # loss_index = t% len(losses) 
         # loss_key = losses[loss_index] 
         # t_i[loss_key]+=1
         # Update biased first moment estimate
-        new_m=state.m
-        new_m={ loss : tree_map(lambda m, g: beta1 * m + (1 - beta1) * g, new_m[loss], grad_dict[loss]) for loss in losses}
-        m_hat = { loss: tree_map(lambda m: m / (1 - (beta1 ** state.t)), new_m[loss]) for loss in losses}
+        new_m=state.m # get moments for each loss function
+        new_m={ loss : tree_map(lambda m, g: beta1 * m + (1 - beta1) * g, new_m[loss], grad_dict[loss]) for loss in losses} # Update the moments exp average 
+        m_hat = { loss: tree_map(lambda m: m / (1 - (beta1 ** t_inc)), new_m[loss]) for loss in losses} # bias correction for each moment 
         weights_list = [weights[key] for key in losses]
-        m_hat_g= tree_map(
-                lambda *grads: solve_layer(weights_list,*grads),  # Pass weights_list as a fixed argument
-                *[m_hat[key] for key in losses]  # Unpack gradients
-            )
-        new_mt=state.mt
-        g_c=tree_map(lambda m,g: ((1-beta1**state.t)*m-beta1*g)/(1-beta1),m_hat_g,new_mt)
-        new_mt=tree_map(lambda m,g: beta1*m+(1-beta1)*g,new_mt,g_c)
-        new_vt=tree_map(lambda v, g: beta2 * v + (1 - beta2) * (g ** 2),state.vt,g_c)
-        v_hat=tree_map(lambda v: v / (1 - beta2 ** state.t), new_vt)
+        flattened_m_hat=[]
+        tree_structure=None
+        for loss in losses:
+            flat_vector,tree_structure=ravel_pytree(m_hat[loss])
+            flattened_m_hat.append(flat_vector)
+        flattened_m_hat = jnp.array(flattened_m_hat)
+        flattened_m_hat = flattened_m_hat
+        final_grad=tree_structure(solve_layer_flatten(weights_list,flattened_m_hat))
+        # final_grad= tree_map(
+        #         lambda *grads: solve_layer(weights_list,*grads),  # Pass weights_list as a fixed argument
+        #         *[m_hat[key] for key in losses]  # Unpack gradients
+        #     ) # calculate the m^ using the conflict free direction 
+        fake_m= tree_map(lambda m: m*(1-beta1**t_inc),final_grad)
+        fake_grads=tree_map(lambda m,g:( m-beta1*g)/(1-beta1),fake_m,state.mt)
+        new_vt=tree_map(lambda v, g: beta2 * v + (1 - beta2) * (g ** 2),state.vt,fake_grads)
+        v_hat=tree_map(lambda v: v / (1 - beta2 ** t_inc), new_vt)
         # Update parameters
-        new_params = tree_map(lambda p, m, v: p - learning_rate * m / (jnp.sqrt(v) + eps), params, m_hat_g, v_hat)
+        updates = tree_map(lambda m, v:  m / (jnp.sqrt(v) + eps), final_grad, v_hat)
 
-        return new_params,state._replace(mt=new_mt, vt=new_vt,m=new_m,t=t_inc)
-    
+        return updates,state._replace(mt=fake_m, vt=new_vt,m=new_m,t=t_inc)
+     
+    # def init_first(grad_dict, weights, state):
+    #     t_inc=jnp.asarray(optax.safe_int32_increment(state.t)) # Increase the count
+    #     state._replace(t=t_inc)    
+    #     new_m={ loss : grad_dict[loss] for loss in losses} 
+    #     weights_list = [weights[key] for key in losses]
+    #     flattened_m_hat=[]
+    #     tree_structure=None
+    #     for loss in losses:
+    #         flat_vector,tree_structure=ravel_pytree(new_m[loss])
+    #         flattened_m_hat.append(flat_vector)
+    #     flattened_m_hat = jnp.array(flattened_m_hat)
+    #     final_grad=tree_structure(solve_layer_flatten(weights_list,flattened_m_hat))
+    #     # final_grad= tree_map(
+    #     #         lambda *grads: solve_layer(weights_list,*grads),  # Pass weights_list as a fixed argument
+    #     #         *[new_m[key] for key in losses]  # Unpack gradients
+    #     #     ) # calculate the m^ using the conflict free direction 
+    #     fake_m=tree_map(lambda m: m*(1-beta1),final_grad)
+    #     fake_grads=tree_map(lambda m,g:( m-beta1*g)/(1-beta1),fake_m,state.mt)
+    #     new_vt=tree_map(lambda g: (1 - beta2) * (g ** 2),fake_grads)
+    #     v_hat=tree_map(lambda v: v / (1 - beta2 ** t_inc), new_vt)
+    #     updates = tree_map(lambda m,v:  m/ (jnp.sqrt(v) + eps), fake_m,new_vt)
+    #     return updates,state._replace(mt=fake_m, vt=new_vt,m=new_m,t=t_inc)
     def update_fn(grads: dict, state: CONFigState  ,params: dict) -> Tuple[dict, CONFigState]:
         """Updates the parameters and state based on the gradients."""
+        t_inc=jnp.asarray(optax.safe_int32_increment(state.t))
         weights=grads["weights"]
         del grads["weights"]
         # grads=tree_map(
         #     lambda g, w: g * w,  # Multiply each gradient by its corresponding weight
         #     grads, weights
         # )
-        params, new_state = apply_gradients(params, grads, weights,state)
+        # params, new_state=jax.lax.cond(
+        #     t_inc == 1,
+        #     lambda: init_first(grads, weights, state),
+        #     lambda: apply_gradients(grads, weights,state),
+        # )
+        params, new_state = apply_gradients( grads, weights,state)
         return params, new_state
     def init_states(params):
         return CONFigState(
                 mt=jax.tree_map(jnp.zeros_like, params),
                 vt=jax.tree_map(jnp.zeros_like, params),
                 m={loss: jax.tree_map(jnp.zeros_like, params) for loss in losses},
-                t=jnp.ones([], jnp.int32)
+                t=jnp.zeros([], jnp.int32)
             )
     return optax.chain(
             optax.GradientTransformation(
